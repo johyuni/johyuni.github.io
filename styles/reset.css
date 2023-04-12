@@ -1,0 +1,90 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+address,
+cite,
+code,
+del,
+em,
+img,
+ins,
+kbd,
+small,
+strong,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+option {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: #333;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* 대체텍스트 */
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  font-size: 0;
+  line-height: 0;
+}
+
+/*  텍스트 줄바꿈 */
+.txt_br {
+  display: block;
+}
+
+/* ios 기본스타일 리셋 */
+button a {
+  color: #333;
+}
+select a {
+  color: #333;
+}
