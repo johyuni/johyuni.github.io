@@ -63,6 +63,12 @@ option {
   box-sizing: border-box;
 }
 
+button,
+a,
+select {
+  cursor: pointer;
+}
+
 /* 대체텍스트 */
 .blind {
   position: absolute;
