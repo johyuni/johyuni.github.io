@@ -1,0 +1,19 @@
+.main__visual {
+  background-color: $color-black; // 임시
+
+  .text-box {
+    @include center;
+    text-align: center;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 700;
+      color: $color-white;
+    }
+    .dsc {
+      display: block;
+      margin-top: 16px;
+      font-size: 1.8rem;
+      color: $color-white;
+    }
+  }
+}

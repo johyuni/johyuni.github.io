@@ -5,7 +5,16 @@
   z-index: 1;
 }
 
-// 줄바꿈
+// 텍스트
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  font-size: 0;
+  line-height: 0;
+}
 @mixin ellipse {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -37,7 +46,6 @@
   top: 0;
   transform: translate(-50%, 0);
 }
-
 @mixin flex {
   display: flex;
   flex-wrap: nowrap;
