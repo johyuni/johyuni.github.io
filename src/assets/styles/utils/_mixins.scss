@@ -1,0 +1,54 @@
+// 가상요소
+@mixin pseudo {
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+// 줄바꿈
+@mixin ellipse {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@mixin ellipse_2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+// 정렬
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+@mixin center_top {
+  @include center;
+  left: 0;
+  transform: translate(0, -50%);
+}
+@mixin center_left {
+  @include center;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+@mixin flex_center {
+  @include flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex_between {
+  @include flex;
+  align-items: center;
+  justify-content: space-between;
+}

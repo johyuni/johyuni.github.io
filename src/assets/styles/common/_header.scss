@@ -1,0 +1,20 @@
+// __logo에 로고 이미지 채우기
+
+.header {
+  @include flex_between;
+  height: 50px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  padding: 0 40px 0;
+
+  &__nav {
+    @include flex_center;
+    height: 100%;
+    gap: 0 16px;
+  }
+  &__link {
+    display: block;
+    font-size: 1.4rem;
+    color: $color_gray1;
+    font-weight: 600;
+  }
+}
