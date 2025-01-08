@@ -49,14 +49,13 @@
 @mixin flex {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 @mixin flex_center {
   @include flex;
-  align-items: center;
   justify-content: center;
 }
 @mixin flex_between {
   @include flex;
-  align-items: center;
   justify-content: space-between;
 }
