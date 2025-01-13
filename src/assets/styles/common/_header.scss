@@ -1,5 +1,6 @@
 // __logo에 로고 이미지 채우기
 // 헤더 스크롤 감지 show hide 효과
+// 모바일 햄버거 메뉴 구현
 
 .header {
   @include flex;
@@ -25,10 +26,24 @@
     height: 100%;
     gap: 0 50px;
   }
+
   &__link {
+    position: relative;
     display: block;
     font-size: 1.6rem;
     color: $color_white;
     font-weight: 600;
+    &::after {
+      @include pseudo;
+      width: 0;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background-color: $color_white;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover::after {
+      width: 100%;
+    }
   }
 }
