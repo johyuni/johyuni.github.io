@@ -1,15 +1,15 @@
 .main__visual {
   background-color: $color-black; // 임시
 
-  .text-box {
+  .text {
     @include center;
     text-align: center;
-    .tit {
+    &__tit {
       font-size: 4.8rem;
       font-weight: 700;
       color: $color-white;
     }
-    .dsc {
+    &__dsc {
       display: block;
       margin-top: 16px;
       font-size: 1.8rem;

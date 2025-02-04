@@ -10,6 +10,7 @@ import Connect from "./components/pages/Connect";
 
 // style
 import "./assets/styles/style.scss";
+import "swiper/css";
 
 function App() {
   return (
