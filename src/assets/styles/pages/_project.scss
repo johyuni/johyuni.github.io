@@ -12,7 +12,7 @@
   height: 100%;
   margin: 0;
 }
-.swiper-slide {
+.swiper-wrapper .swiper-slide {
   @include flex_center;
   gap: 0 40px;
   font-size: 18px;
