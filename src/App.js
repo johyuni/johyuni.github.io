@@ -10,8 +10,8 @@ import Connect from "./components/pages/Connect";
 
 // style
 import "./assets/styles/style.scss";
-import "swiper/css";
-
+import "swiper/css"; // 여기에 두는게 맞는걸까?
+import "swiper/css/effect-fade";
 function App() {
   return (
     <div className="wrap">

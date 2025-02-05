@@ -1,21 +1,25 @@
+// todo :: 스와이퍼에 대한 CSS를 따로 옮겨야할까?
+// todo :: 링크연결 및 호버효과 적용 필요
+
 .main__project {
-  background-color: $color-black; // 임시
+  background-color: $color-black;
   .content {
     height: 100%;
     @include flex_between;
+    gap: 0 4rem;
   }
 }
-
-// SwiperSlide (Text+img)
+// SwiperSlide (Text + img + number)
 .swiper {
-  width: 920px;
+  width: 92rem;
   height: 100%;
   margin: 0;
 }
 .swiper-wrapper .swiper-slide {
   @include flex_center;
-  gap: 0 40px;
-  font-size: 18px;
+  gap: 0 4rem;
+  font-size: 1.8rem;
+  background-color: $color-black;
 }
 .slide-text {
   text-align: left;
@@ -26,7 +30,7 @@
     color: $color-white;
   }
   .dsc {
-    margin-top: 30px;
+    margin-top: 3rem;
     font-size: 1.8rem;
     line-height: 3rem;
     color: $color_gray4;
@@ -34,7 +38,7 @@
 }
 .slide-img {
   flex-shrink: 0;
-  width: 440px;
+  width: 44rem;
   height: 100%;
   background-color: #4d49fc;
   .img {
@@ -45,26 +49,46 @@
   }
 }
 .slide-link {
-  width: calc(100% - 960px);
+  width: calc(100% - 96rem);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-.link {
-  display: block;
-  font-size: 2rem;
-  font-weight: 600;
-  color: $color-white;
-  &::after {
-    content: "";
+  .link {
     display: block;
-    margin-top: 20px;
-    width: 100%;
-    height: 1px;
-    background-color: $color-white;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-white;
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 2rem;
+      width: 100%;
+      height: 0.1rem;
+      background-color: $color-white;
+    }
+    & + .link {
+      margin-top: 2rem;
+    }
   }
-  & + .link {
-    margin-top: 20px;
+}
+.slide-number {
+  position: absolute;
+  z-index: 10;
+  bottom: 10rem;
+  left: 0;
+  width: 100%;
+  .num {
+    color: $color-white;
+    font-size: 1.8rem;
+    &:first-child::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 1rem;
+      width: 2.5rem;
+      height: 0.2rem;
+      background-color: $color-white;
+    }
   }
 }
