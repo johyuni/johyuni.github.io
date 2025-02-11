@@ -11,10 +11,10 @@ function Project() {
       <div className="inner">
         <div className="content">
           <Swiper
-            effect={"fade"} // 페이드인효과
+            effect={"fade"}
             centeredSlides={true}
             autoplay={{
-              delay: 2500, // 속도
+              delay: 2500,
               disableOnInteraction: false,
             }}
             modules={[Autoplay, EffectFade]}
@@ -73,7 +73,8 @@ function Project() {
             </SwiperSlide>
           </Swiper>
 
-          {/* 여기에 프로젝트 링크추가 / 호버효과 추가  */}
+          {/* todo :: 여기에 프로젝트 링크추가 / 호버효과 추가  */}
+          {/* todo :: map으로 돌릴지 고민해보고 개선 */}
           <div className="slide-link">
             <Link to="" target="" className="link">
               프로젝트 제목 01
