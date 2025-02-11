@@ -11,10 +11,10 @@ function Project() {
       <div className="inner">
         <div className="content">
           <Swiper
-            effect={"fade"}
+            effect={"fade"} // 페이드인효과
             centeredSlides={true}
             autoplay={{
-              delay: 2500,
+              delay: 2500, // 속도
               disableOnInteraction: false,
             }}
             modules={[Autoplay, EffectFade]}
