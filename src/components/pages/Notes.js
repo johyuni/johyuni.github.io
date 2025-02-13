@@ -23,8 +23,8 @@ function Notes() {
     <section className="main__notes">
       <div className="inner">
         {/* top */}
-        <div className="contnet">
-          <strong className="contnet__tit">hyyyuni.log</strong>
+        <div className="content">
+          <strong className="content__tit">hyyyuni.log</strong>
 
           <div className="input-box">
             <label htmlFor="input">내 노트</label>

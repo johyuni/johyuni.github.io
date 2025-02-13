@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 function App() {
   return (
     <div className="wrap">
-      <div className="contnet">
+      <div className="content">
         <Header />
         <main className="main">
           <Visual />

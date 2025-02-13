@@ -5,30 +5,30 @@ function Profile() {
     <section className="main__profile">
       <div className="inner">
         {/* left */}
-        <div className="contnet">
-          <strong className="contnet__tit">
-            안녕하세요 퍼블리셔 조현희입니다
+        <div className="content">
+          {" "}
+          content
+          <strong className="content__tit">
+            안녕하세요 <br />
+            퍼블리셔 조현희입니다
           </strong>
-          <div className="content__dsc">
-            <strong>jo hyunhee</strong>
-            <p>
-              간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
-              영역입니다 간단한 소개글 영역입니다
-            </p>
-          </div>
+          <p className="content__dsc">
+            간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
+            영역입니다 간단한 소개글 영역입니다
+          </p>
         </div>
 
         {/* right */}
-        <div className="contnet">
-          <div className="contnet__item">
-            <strong className="contnet__subtit">Information</strong>
+        <div className="content">
+          <div className="content__item">
+            <strong className="content__subtit">Information</strong>
             <span>1995.02.06</span>
             <span>&#43;82&#41; 10&#45;4068&#45;2252</span>
             <span>2252hyun&#64;gmail.com</span>
           </div>
 
-          <div className="contnet__item">
-            <strong className="contnet__subtit">Education</strong>
+          <div className="content__item">
+            <strong className="content__subtit">Education</strong>
             <dl>
               <dt>2022</dt>
               <dd>
@@ -42,8 +42,8 @@ function Profile() {
             </dl>
           </div>
 
-          <div className="contnet__item">
-            <strong className="contnet__subtit">Experience</strong>
+          <div className="content__item">
+            <strong className="content__subtit">Experience</strong>
             <dl>
               <dt>2023. 11 &#126; 2024. 09</dt>
               <dd>주식회사 버치홀딩스 퍼블리셔</dd>
@@ -56,23 +56,23 @@ function Profile() {
             </dl>
           </div>
 
-          <div className="contnet__item">
-            <strong className="contnet__subtit">Interest in</strong>
+          <div className="content__item">
+            <strong className="content__subtit">Interest in</strong>
             <span>퍼블리싱</span>
             <span>프론트엔드 개발</span>
             <span>UXUI 디자인</span>
             <span>브랜딩 디자인</span>
           </div>
 
-          <div className="contnet__item">
-            <strong className="contnet__subtit">Character</strong>
+          <div className="content__item">
+            <strong className="content__subtit">Character</strong>
             <span>끈기있는</span>
             <span>도전적인</span>
             <span>섬세한</span>
           </div>
 
-          <div className="contnet__item">
-            <strong className="contnet__subtit">Tools</strong>
+          <div className="content__item">
+            <strong className="content__subtit">Tools</strong>
             <span>HTML5</span>
             <span>CSS3</span>
             <span>Sass</span>
@@ -85,8 +85,8 @@ function Profile() {
             {/* ... 을 호버하면 포토샵 일러스트도 보이게  */}
           </div>
 
-          <div className="contnet__item">
-            <strong className="contnet__subtit">Experience</strong>
+          <div className="content__item">
+            <strong className="content__subtit">Experience</strong>
             <dl>
               <dt>2022. 04</dt>
               <dd>웹디자인 기능사</dd>
