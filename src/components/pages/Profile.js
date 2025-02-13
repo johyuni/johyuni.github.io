@@ -6,13 +6,14 @@ function Profile() {
       <div className="inner">
         {/* left */}
         <div className="content">
-          {" "}
-          content
           <strong className="content__tit">
             안녕하세요 <br />
             퍼블리셔 조현희입니다
           </strong>
           <p className="content__dsc">
+            간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
+            영역입니다 간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한
+            소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글 영역입니다
             간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
             영역입니다 간단한 소개글 영역입니다
           </p>

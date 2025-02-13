@@ -2,20 +2,24 @@
   background-color: $color_gray1; // 임시
 
   .inner {
-    @include flex_between;
+    @include flex;
+    gap: 0 4rem;
   }
 
   .content {
-    &__tit {
-      font-size: 4rem;
-      font-weight: 600;
-      color: $color_white;
-    }
-    &__dsc {
-      margin-top: 20px;
-    }
-    &__dsc {
-      margin-top: 20px;
+    &:first-of-type {
+      .content__tit {
+        width: 44rem;
+        font-size: 4rem;
+        font-weight: 600;
+        color: $color_white;
+      }
+      .content__dsc {
+        width: 44rem;
+        font-size: 1.4rem;
+        margin-top: 20px;
+        color: $color_gray4;
+      }
     }
   }
 }
