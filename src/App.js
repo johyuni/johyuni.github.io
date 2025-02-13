@@ -7,6 +7,7 @@ import Profile from "./components/pages/Profile";
 import Project from "./components/pages/Project";
 import Notes from "./components/pages/Notes";
 import Connect from "./components/pages/Connect";
+import Footer from "./components/footer/Footer";
 
 // style
 import "./assets/styles/style.scss";
@@ -24,8 +25,7 @@ function App() {
           <Notes />
           <Connect />
         </main>
-
-        {/* footer */}
+        <Footer />
       </div>
     </div>
   );
