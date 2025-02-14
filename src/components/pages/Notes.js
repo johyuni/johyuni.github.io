@@ -24,16 +24,24 @@ function Notes() {
       <div className="inner">
         {/* top */}
         <div className="content">
-          <strong className="content__tit">hyyyuni.log</strong>
+          <strong className="content__tit">노트</strong>
 
           <div className="input-box">
-            <label htmlFor="input">내 노트</label>
-            <input id="input" type="text" placeholder="전체" disabled />
+            <label htmlFor="input" className="label">
+              이런 기록을 했어요
+            </label>
+            <input
+              id="input"
+              type="text"
+              className="input"
+              placeholder="hyyyuni.log"
+              disabled
+            />
             <i></i>
             <i></i>
           </div>
           <span>작성된 글</span>
-          <span>5</span>
+          <span className="tag">5</span>
         </div>
 
         {/* list */}
