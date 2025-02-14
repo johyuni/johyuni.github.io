@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Profile() {
   return (
@@ -7,8 +8,12 @@ function Profile() {
         {/* left */}
         <div className="content">
           <strong className="content__tit">
-            안녕하세요 <br />
-            퍼블리셔 조현희입니다
+            밝은 에너지와 긍정적인 자세로
+            <br />
+            꾸준히 성장하는 조현희입니다.
+            <Link to="" className="content__link">
+              소개 더보기
+            </Link>
           </strong>
           <p className="content__dsc">
             간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
@@ -34,7 +39,7 @@ function Profile() {
               <dt>2022</dt>
               <dd>
                 반응형 웹디자인 &#40;UIUX&#41; &#38; 웹퍼블리셔 디지털 실무
-                양성과정 &#40;B&#41; 수료
+                양성과정 수료
               </dd>
               <dt>2015</dt>
               <dd>한국 폴리텍Ⅱ대학 인천캠퍼스 졸업</dd>

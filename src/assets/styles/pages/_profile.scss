@@ -1,5 +1,5 @@
 .main__profile {
-  background-color: $color_gray1; // 임시
+  background-color: $color_black;
 
   .inner {
     @include flex;
@@ -7,18 +7,110 @@
   }
 
   .content {
+    height: 100%;
     &:first-of-type {
+      @include flex_between;
+      flex-direction: column;
+      // flex-wrap: wrap;
       .content__tit {
         width: 44rem;
-        font-size: 4rem;
+        font-size: 1.8rem;
         font-weight: 600;
+        line-height: 3rem;
+        color: $color_white;
+      }
+      .content__link {
+        display: block;
+        margin-top: 3rem;
+        font-size: 1.4rem;
         color: $color_white;
       }
       .content__dsc {
         width: 44rem;
-        font-size: 1.4rem;
-        margin-top: 20px;
+        font-size: 1.2rem;
         color: $color_gray4;
+      }
+    }
+
+    // 좌측 박스 스타일
+    &:last-of-type {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      .content__item {
+        padding: 1.6rem;
+        border-radius: 0.4rem;
+        &:nth-of-type(1) {
+          background-color: #c800c8;
+          span {
+            display: block;
+          }
+        }
+        &:nth-of-type(2) {
+          background-color: #00c8c8;
+        }
+        &:nth-of-type(3) {
+          background-color: $color_gray1;
+        }
+        &:nth-of-type(4) {
+          background-color: $color_black;
+          border: 2px solid #00a6e9;
+        }
+        &:nth-of-type(5) {
+          background-color: #c8c800;
+        }
+        &:nth-of-type(6) {
+          background-color: $color_gray1;
+        }
+        &:nth-of-type(7) {
+          background-color: #088c37;
+        }
+        span {
+          display: inline-block;
+          & + span {
+            margin-top: 0.6rem;
+          }
+        }
+        dt {
+          width: 16rem;
+          font-weight: 600;
+          & + dd {
+            margin-top: 0.4rem;
+            padding-left: 1rem;
+          }
+        }
+        dd {
+          width: calc(100% - 17rem);
+          line-height: 130%;
+          & + dt {
+            margin-top: 0.6rem;
+          }
+        }
+
+        dt,
+        dd {
+          display: inline-block;
+          vertical-align: top;
+        }
+        span,
+        dl,
+        dt,
+        dd {
+          color: $color_white;
+          font-size: 1.2rem;
+          word-break: keep-all;
+        }
+      }
+
+      .content__subtit {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $color_white;
+        & + span,
+        & + dl {
+          margin-top: 1.2rem;
+        }
       }
     }
   }
