@@ -79,15 +79,15 @@ function Profile() {
 
           <div className="content__item">
             <strong className="content__subtit">Tools</strong>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>Sass</span>
-            <span>Media Query</span>
-            <span>jQuery</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Figma</span>
-            <span>...</span>
+            <span className="tag">HTML5</span>
+            <span className="tag">CSS3</span>
+            <span className="tag">Sass</span>
+            <span className="tag">Media Query</span>
+            <span className="tag">jQuery</span>
+            <span className="tag">JavaScript</span>
+            <span className="tag">React</span>
+            <span className="tag">Figma</span>
+            <span className="tag">...</span>
             {/* ... 을 호버하면 포토샵 일러스트도 보이게  */}
           </div>
 

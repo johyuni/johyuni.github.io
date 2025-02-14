@@ -1,0 +1,11 @@
+.tag {
+  border-radius: 0.4rem;
+  background-color: $color_gray3;
+  padding: 0.2rem 0.4rem;
+  font-family: Consolas;
+  color: $color_black;
+  font-size: 1.2rem;
+  & + .tag {
+    margin-left: 0.4rem;
+  }
+}

@@ -2,7 +2,7 @@
 // todo :: 링크연결 및 호버효과 적용 필요
 
 .main__project {
-  background-color: $color-black;
+  background-color: $color-white;
   .content {
     height: 100%;
     @include flex_between;
@@ -19,7 +19,7 @@
   @include flex_center;
   gap: 0 4rem;
   font-size: 1.8rem;
-  background-color: $color-black;
+  background-color: $color-white;
 }
 .slide-text {
   text-align: left;
@@ -27,13 +27,13 @@
   .tit {
     font-size: 5rem;
     font-weight: 700;
-    color: $color-white;
+    color: $color-black;
   }
   .dsc {
     margin-top: 3rem;
     font-size: 1.8rem;
     line-height: 3rem;
-    color: $color_gray4;
+    color: $color-black;
   }
 }
 .slide-img {
@@ -58,14 +58,14 @@
     display: block;
     font-size: 2rem;
     font-weight: 600;
-    color: $color-white;
+    color: $color-black;
     &::after {
       content: "";
       display: block;
       margin-top: 2rem;
       width: 100%;
       height: 0.1rem;
-      background-color: $color-white;
+      background-color: $color-black;
     }
     & + .link {
       margin-top: 2rem;
@@ -79,7 +79,7 @@
   left: 0;
   width: 100%;
   .num {
-    color: $color-white;
+    color: $color-black;
     font-size: 1.8rem;
     &:first-child::after {
       content: "";
@@ -88,7 +88,7 @@
       margin: 0 1rem;
       width: 2.5rem;
       height: 0.2rem;
-      background-color: $color-white;
+      background-color: $color-black;
     }
   }
 }
