@@ -1,11 +1,10 @@
 .main__notes {
-  // background-color: #0000fe; 임시
   background-color: $color_gray1;
   .inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+  } 
 
   .content__tit {
     color: $color_white;

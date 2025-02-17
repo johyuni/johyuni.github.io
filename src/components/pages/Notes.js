@@ -24,24 +24,26 @@ function Notes() {
       <div className="inner">
         {/* top */}
         <div className="content">
-          <strong className="content__tit">노트</strong>
+          <strong className="content__tit">hyyyuni.log</strong>
 
           <div className="input-box">
-            <label htmlFor="input" className="label">
-              이런 기록을 했어요
-            </label>
             <input
               id="input"
               type="text"
               className="input"
-              placeholder="hyyyuni.log"
-              disabled
+              placeholder="어디서나 기록하는 습관 !"
+              readOnly
             />
             <i></i>
             <i></i>
           </div>
-          <span>작성된 글</span>
-          <span className="tag">5</span>
+
+          <div className="note__tag">
+            <span className="tag">BEM</span>
+            <span className="tag">localhost</span>
+            <span className="tag">editor</span>
+            <span className="tag">clone-coding</span>
+          </div>
         </div>
 
         {/* list */}
