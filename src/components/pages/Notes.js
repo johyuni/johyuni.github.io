@@ -8,15 +8,38 @@ function Notes() {
       id: "카테고리",
       name: "포스트 이름1",
       link: "https://velog.io/@hyyyuni/posts?tag=BEM",
+      dsc: "포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄",
     },
     {
       id: "카테고리",
       name: "포스트 이름2",
       link: "https://velog.io/@hyyyuni/posts?tag=localhost",
+      dsc: "포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄",
     },
-    { id: "카테고리", name: "포스트 이름3", link: "" },
-    { id: "카테고리", name: "포스트 이름4", link: "" },
-    { id: "카테고리", name: "포스트 이름5", link: "" },
+    {
+      id: "카테고리",
+      name: "포스트 이름3",
+      link: "",
+      dsc: "포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄",
+    },
+    {
+      id: "카테고리",
+      name: "포스트 이름4",
+      link: "",
+      dsc: "포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄",
+    },
+    {
+      id: "카테고리",
+      name: "포스트 이름5",
+      link: "",
+      dsc: "포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄",
+    },
+    {
+      id: "카테고리",
+      name: "포스트 이름6",
+      link: "",
+      dsc: "포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄 포스트 설명 두 줄",
+    },
   ];
 
   return (
@@ -24,14 +47,14 @@ function Notes() {
       <div className="inner">
         {/* top */}
         <div className="content">
-          <strong className="content__tit">hyyyuni.log</strong>
+          <strong className="content__tit">노트</strong>
 
           <div className="input-box">
             <input
               id="input"
               type="text"
               className="input"
-              placeholder="어디서나 기록하는 습관 !"
+              placeholder="hyyyuni.log"
               readOnly
             />
             <i></i>
@@ -39,10 +62,12 @@ function Notes() {
           </div>
 
           <div className="note__tag">
+            <span className="tag">Design System</span>
+            <span className="tag">Clone-Coding</span>
+            <span className="tag">Code Editor</span>
+            <span className="tag">Git</span>
             <span className="tag">BEM</span>
             <span className="tag">localhost</span>
-            <span className="tag">editor</span>
-            <span className="tag">clone-coding</span>
           </div>
         </div>
 
@@ -53,6 +78,7 @@ function Notes() {
               <Link to={item.link} className="note-list__link">
                 <span className="note-list__cate">{item.id}</span>
                 <strong className="note-list__tit">{item.name}</strong>
+                <span className="note-list__dsc">{item.dsc}</span>
                 <i className="note-list__ico"></i>
               </Link>
             </li>
