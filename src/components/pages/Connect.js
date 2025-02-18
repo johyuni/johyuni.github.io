@@ -6,18 +6,35 @@ function Connect() {
   return (
     <section className="main__connect">
       <div className="inner">
+        {/* left*/}
         <div className="content">
           <strong className="content__tit">연결</strong>
-          <div className="content__tag">
-            <span className="tag tag--s">UX&#47;UI</span>
-            <span className="tag tag--s">web publishing</span>
-            <span className="tag tag--s">Web design</span>
-            <span className="tag tag--s">Positive</span>
+          <strong className="">패기있는 문구</strong>
+          <ul>
+            <li>
+              <strong>키워드</strong>
+              <p>내용5줄 내용5줄 내용5줄 내용5줄 내용5줄 내용5줄</p>
+              <span>키워드</span>
+            </li>
+            <li>
+              <strong>키워드</strong>
+              <p>내용5줄 내용5줄 내용5줄 내용5줄 내용5줄 내용5줄</p>
+              <span>키워드</span>
+            </li>
+            <li>
+              <strong>키워드</strong>
+              <p>내용5줄 내용5줄 내용5줄 내용5줄 내용5줄 내용5줄</p>
+              <span>키워드</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* right*/}
+        <div className="content">
+          <strong>바로 연결</strong>
+          <div className="content__img">
+            <img src="" alt="" className="img" />
           </div>
-          <p className="content__dsc">
-            하고싶은말 간략하게 두줄정도? 또는 흘러가는 텍스트 애니메이션
-            구현해보기
-          </p>
         </div>
 
         {/* 핵심역량 세가지에 녹이기 */}
@@ -27,7 +44,6 @@ function Connect() {
           <span>도전적인</span>
           <span>섬세한</span>
         </div> */}
-
         {/* <div className="content__item">
           <strong className="content__subtit">Interest in</strong>
           <span>퍼블리싱</span>

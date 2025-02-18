@@ -1,3 +1,7 @@
 .main__connect {
   background-color: $color_black; // 임시
+  .content {
+    height: auto;
+    color: $color_white;
+  }
 }
