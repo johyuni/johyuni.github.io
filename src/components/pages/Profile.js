@@ -11,9 +11,11 @@ function Profile() {
             밝은 에너지와 경청하는 자세로
             <br />
             꾸준히 성장하는 조현희입니다.
-            <Link to="" className="content__link">
-              소개 더보기
-            </Link>
+            <div className="content__link">
+              <Link to="" className="link">
+                소개 더보기
+              </Link>
+            </div>
           </strong>
           <p className="content__dsc">
             간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글

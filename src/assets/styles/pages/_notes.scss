@@ -1,67 +1,85 @@
 .main__notes {
-  background-color: $color_gray1;
+  background-color: $color_white;
   .inner {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .input-box {
-    margin-top: 3rem;
-    .input {
-      height: 4rem;
+  .content {
+    &__tit {
+      color: $color_black;
+    }
+    &__tag {
+      margin-top: 1.2rem;
+    }
+    &__link {
       width: 100%;
-      margin-top: 0.8rem;
-      padding: 0 1.6rem;
-      border-bottom: 1px solid $color_gray4;
-      background-color: $color_gray3;
-      &:focus-visible {
-        border: 0;
+      margin-top: 3rem;
+      width: 100%;
+      height: 4rem;
+      text-align: center;
+      .link {
+        color: $color_bgray2;
+        &:hover {
+          color: $color_bgray1;
+        }
       }
     }
   }
-  .note__tag {
-    margin-top: 2rem;
+
+  .input-box {
+    margin-top: 4rem;
+    .input {
+      display: block;
+      height: 4.8rem;
+      width: 100%;
+      padding: 0 1.6rem;
+      border: 1px solid $color_gray5;
+      border-radius: 0.4rem;
+      background-color: $color_white;
+      box-sizing: border-box;
+      &::placeholder {
+        color: $color_gray4;
+      }
+    }
   }
 
+  // list
   .note-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
     &__item {
-      padding: 2.4rem;
+      padding: 4rem;
+      min-width: 0;
       transition: all 0.3s ease-in-out;
-      &:nth-child(even) {
-        border-left: 1px solid $color_gray2;
-      }
       &:hover {
-        background-color: $color_gray2;
+        background-color: $color_bgray4;
       }
     }
     &__link {
-      @include flex_between;
-      flex-wrap: wrap;
+      @include flex;
+      gap: 4rem;
       width: 100%;
     }
-    &__cate {
-      display: block;
-      width: 100%;
+    &__num {
+      flex-shrink: 0;
       font-size: 1.2rem;
-      color: $color_white;
-      font-weight: 600;
+      color: $color_gray4;
+      font-weight: 500;
     }
     &__tit {
       flex-shrink: 0;
       display: block;
-      margin-top: 0.4rem;
+      width: 13rem;
       font-size: 1.8rem;
       font-weight: 600;
-      color: $color_white;
+      color: $color_bgray1;
     }
     &__dsc {
-      margin-top: 0.2rem;
+      @include ellipse;
       font-size: 1.4rem;
       font-weight: 500;
-      color: $color_gray4;
+      color: $color_bgray2;
     }
   }
 }
