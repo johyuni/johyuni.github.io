@@ -9,6 +9,7 @@ function Project() {
   return (
     <section className="main__project">
       <div className="inner">
+        <strong className="content__tit">프로젝트</strong>
         <div className="content">
           <Swiper
             effect={"fade"}

@@ -2,11 +2,11 @@
 // todo :: 링크연결 및 호버효과 적용 필요
 
 .main__project {
-  background-color: $color-white;
+  background-color: $color_black;
   .content {
     height: 100%;
     @include flex_between;
-    gap: 0 4rem;
+    gap: 0 6rem;
   }
 }
 // SwiperSlide (Text + img + number)
@@ -19,21 +19,24 @@
   @include flex_center;
   gap: 0 4rem;
   font-size: 1.8rem;
-  background-color: $color-white;
+  background-color: $color_black;
 }
+
+// text
 .slide-text {
   text-align: left;
   word-break: keep-all;
   .tit {
-    font-size: 5rem;
-    font-weight: 700;
-    color: $color_black;
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $color_white;
   }
   .dsc {
-    margin-top: 3rem;
-    font-size: 1.8rem;
-    line-height: 3rem;
-    color: $color_black;
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: $color_gray5;
   }
 }
 .slide-img {
@@ -41,7 +44,6 @@
   width: 44rem;
   height: 100%;
   background-color: #4d49fc;
-  border-radius: 0.4rem;
   .img {
     display: block;
     width: 100%;
@@ -57,19 +59,18 @@
   justify-content: flex-end;
   .link {
     display: block;
+    padding-top: 2rem;
+    margin-top: -1px;
     font-size: 2rem;
-    font-weight: 600;
-    color: $color_black;
+    font-weight: 500;
+    color: $color_gray5;
     &::after {
       content: "";
       display: block;
       margin-top: 2rem;
       width: 100%;
       height: 0.1rem;
-      background-color: $color_black;
-    }
-    & + .link {
-      margin-top: 2rem;
+      background-color: $color_gray3;
     }
   }
 }
@@ -80,8 +81,8 @@
   left: 0;
   width: 100%;
   .num {
-    color: $color_black;
-    font-size: 1.8rem;
+    color: $color_gray4;
+    font-size: 1.6rem;
     &:first-child::after {
       content: "";
       display: inline-block;
@@ -89,7 +90,7 @@
       margin: 0 1rem;
       width: 2.5rem;
       height: 0.2rem;
-      background-color: $color_black;
+      background-color: $color_gray4;
     }
   }
 }
