@@ -61,7 +61,7 @@ function Notes() {
             <i></i>
           </div>
 
-          <div className="note__tag">
+          <div className="content__tag">
             <span className="tag">Design System</span>
             <span className="tag">Clone-Coding</span>
             <span className="tag">Code Editor</span>

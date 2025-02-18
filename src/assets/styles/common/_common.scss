@@ -1,8 +1,9 @@
 // layout
 .main {
+  background-color: $color_black;
   section {
-    height: calc(100vh - 16rem);
-    padding: 8rem 0;
+    height: calc(100vh - 24rem);
+    padding: 12rem 0;
   }
   .inner {
     position: relative;
@@ -15,43 +16,70 @@
 // typo
 // todo :: 폰트사이즈 정돈할것
 .content {
+  height: 100%;
   &__tit,
   .tit {
+    display: block;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 3rem;
+    color: $color_white;
   }
   &__dsc,
   .dsc {
-    width: 44rem;
+    display: block;
     font-size: 1.4rem;
+    color: $color_gray4;
   }
   &__link {
+    position: relative;
+    display: block;
     font-size: 1.4rem;
+    color: $color_white;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $color_gray4;
+    }
   }
-}
-
-// component
-.tag {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 14px;
-  border: 1px solid transparent;
-  border-radius: 19px;
-  background-color: $color_gray5;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: $color_gray3;
-  &--s {
-    border-radius: 0.4rem;
-    background-color: $color_gray3;
-    padding: 0.2rem 0.4rem;
-    font-family: Consolas;
-    color: $color_black;
+  &__subtit {
+    display: block;
+    font-size: 1.4rem;
     font-weight: 500;
   }
-  & + .tag {
-    margin-left: 0.4rem;
+
+  // component
+  &__tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    .tag {
+      margin: 0;
+      flex-shrink: 0;
+      padding: 6px 14px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 2rem;
+      background-color: $color_gray5;
+      color: $color_gray3;
+    }
+    .tag--s {
+      height: 100%;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.4rem;
+      background-color: $color_gray2;
+      font-family: Consolas;
+      font-weight: 500;
+    }
+  }
+  .tooltip {
+    opacity: 0;
+    width: 22rem;
+    border: 1px solid $color_gray3;
+    background-color: $color_gray1;
+    color: #569cd6;
+    font-size: 1.4rem;
+    font-family: Consolas;
+    padding: 0.6rem 1rem;
+    transition: all 0.4s ease-in-out;
   }
 }

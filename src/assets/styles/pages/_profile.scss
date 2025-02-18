@@ -1,133 +1,103 @@
 .main__profile {
-  background-color: $color_black;
-
+  background-color: $color_gray1;
   .inner {
     @include flex;
-    gap: 0 4rem;
+    gap: 0 6rem;
   }
 
+  // 우측콘텐츠
   .content {
-    height: 100%;
     &:first-of-type {
-      @include flex_between;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
       flex-direction: column;
-      // flex-wrap: wrap;
-      .content__tit {
-        width: 44rem;
-        color: $color_white;
-      }
+      flex-shrink: 0;
+      width: 37rem;
+      border-right: 1px solid $color_gray1;
       .content__link {
-        display: block;
         margin-top: 3rem;
-        color: $color_white;
-      }
-      .content__dsc {
-        color: $color_gray4;
       }
     }
 
-    // 좌측 박스 스타일
+    // 좌측콘텐츠
     &:last-of-type {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      border-left: 1px solid $color_gray2;
+      padding-left: 6rem;
       .content__item {
-        padding: 1.6rem;
-        border-radius: 0.4rem;
-        &:nth-of-type(1) {
-          background-color: #c800c8;
-          span,
-          .content__subtit {
-            color: $color_gray1;
-            padding: 0;
+        padding: 2rem;
+
+        &:first-of-type span {
+          display: block;
+          font-family: Consolas;
+          font-size: 1.4rem;
+        }
+
+        .content__subtit {
+          font-family: Consolas;
+          font-size: 1.6rem;
+          color: $color_primary;
+          & + span,
+          & + dl {
+            margin-top: 1.2rem;
           }
-          span {
-            display: block;
-            font-family: Consolas;
-            font-size: 1.4rem;
+          &::before {
+            content: "<";
           }
-        }
-        &:nth-of-type(2) {
-          background-color: #00c8c8;
-          dt,
-          dd,
-          .content__subtit {
-            color: $color_gray1;
+          &::after {
+            content: ">";
           }
-        }
-        &:nth-of-type(3) {
-          background-color: $color_gray1;
-        }
-        &:nth-of-type(4) {
-          background-color: $color_black;
-          border: 2px solid #00a6e9;
-        }
-        &:nth-of-type(5) {
-          background-color: #c8c800;
-          span,
-          .content__subtit {
-            color: $color_gray1;
-          }
-        }
-        &:nth-of-type(6) {
-          background-color: $color_gray1;
-        }
-        &:nth-of-type(7) {
-          background-color: #088c37;
-          dt,
-          dd,
-          .content__subtit {
-            color: $color_gray1;
+          &::before,
+          &::after {
+            display: inline-block;
+            color: $color_gray3;
+            font-size: 1.8rem;
+            font-weight: 600;
           }
         }
 
+        dt,
+        dd,
         span {
-          display: inline-block;
-          font-size: 1.2rem;
-          & + span {
-            margin-top: 0.6rem;
-            padding-left: 0.6rem;
-          }
+          font-size: 1.4rem;
+          word-break: keep-all;
+          color: $color_gray5;
         }
+
+        dt:not(:first-of-type),
+        dd:not(:first-of-type),
+        span:not(:first-of-type),
+        .content__tag {
+          margin-top: 0.8rem;
+        }
+
         dt {
           width: 16rem;
-          font-size: 1.3rem;
+          font-size: 1.4rem;
           font-family: Consolas;
-          & + dd {
-            padding-left: 1rem;
-          }
         }
         dd {
-          width: calc(100% - 17rem);
-          line-height: 130%;
-          font-size: 1.2rem;
+          width: calc(100% - 16.8rem);
+          padding-left: 0.8rem;
+          font-size: 1.3rem;
+          line-height: 150%;
           vertical-align: top;
-          & + dt {
-            margin-top: 0.6rem;
-          }
         }
         dt,
         dd {
           display: inline-block;
         }
-        span,
-        dl,
-        dt,
-        dd {
-          color: $color_white;
-          word-break: keep-all;
-        }
-      }
 
-      .content__subtit {
-        display: block;
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: $color_white;
-        font-family: Consolas;
-        & + span,
-        & + dl {
-          margin-top: 1.2rem;
+        .content__tag .tag {
+          margin: 0;
+          &:last-of-type {
+            cursor: pointer;
+          }
+          &:last-of-type:hover ~ .tooltip {
+            opacity: 1;
+          }
         }
       }
     }

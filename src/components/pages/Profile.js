@@ -8,7 +8,7 @@ function Profile() {
         {/* left */}
         <div className="content">
           <strong className="content__tit">
-            밝은 에너지와 긍정적인 자세로
+            밝은 에너지와 경청하는 자세로
             <br />
             꾸준히 성장하는 조현희입니다.
             <Link to="" className="content__link">
@@ -18,9 +18,7 @@ function Profile() {
           <p className="content__dsc">
             간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
             영역입니다 간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한
-            소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글 영역입니다
-            간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
-            영역입니다 간단한 소개글 영역입니다
+            소개글 영역입니다 간단한 소개글 영역입니다
           </p>
         </div>
 
@@ -38,8 +36,8 @@ function Profile() {
             <dl>
               <dt>2022</dt>
               <dd>
-                반응형 웹디자인 &#40;UIUX&#41; &#38; 웹퍼블리셔 디지털 실무
-                양성과정 수료
+                반응형 웹디자인 &#40;UIUX&#41; &#38; 웹퍼블리셔 <br />
+                디지털 실무 양성과정 수료
               </dd>
               <dt>2015</dt>
               <dd>한국 폴리텍Ⅱ대학 인천캠퍼스 졸업</dd>
@@ -56,43 +54,36 @@ function Profile() {
               <dt>2022. 05 &#126; 2023. 05</dt>
               <dd>주식회사 인스플래닛 퍼블리셔</dd>
               <dt>2021. 02 &#126; 2021. 08</dt>
-              <dd>제주항공 B2C 홈페이지 리뉴얼 프리랜서 디자이너</dd>
+              <dd>
+                제주항공 B2C 홈페이지 리뉴얼
+                <br />
+                프리랜서 디자이너
+              </dd>
               <dt>2018. 04 &#126; 2020. 09</dt>
               <dd>주식회사 위아트 디자이너</dd>
             </dl>
           </div>
 
           <div className="content__item">
-            <strong className="content__subtit">Interest in</strong>
-            <span>퍼블리싱</span>
-            <span>프론트엔드 개발</span>
-            <span>UXUI 디자인</span>
-            <span>브랜딩 디자인</span>
-          </div>
-
-          <div className="content__item">
-            <strong className="content__subtit">Character</strong>
-            <span>끈기있는</span>
-            <span>도전적인</span>
-            <span>섬세한</span>
-          </div>
-
-          <div className="content__item">
             <strong className="content__subtit">Tools</strong>
-            <span className="tag tag--s">HTML5</span>
-            <span className="tag tag--s">CSS3</span>
-            <span className="tag tag--s">Sass</span>
-            <span className="tag tag--s">Media Query</span>
-            <span className="tag tag--s">jQuery</span>
-            <span className="tag tag--s">JavaScript</span>
-            <span className="tag tag--s">React</span>
-            <span className="tag tag--s">Figma</span>
-            <span className="tag tag--s">...</span>
-            {/* ... 을 호버하면 포토샵 일러스트도 보이게  */}
+            <div className="content__tag">
+              <span className="tag tag--s">HTML5</span>
+              <span className="tag tag--s">CSS3</span>
+              <span className="tag tag--s">Sass</span>
+              <span className="tag tag--s">Media Query</span>
+              <span className="tag tag--s">jQuery</span>
+              <span className="tag tag--s">JavaScript</span>
+              <span className="tag tag--s">React</span>
+              <span className="tag tag--s">Figma</span>
+              <span className="tag tag--s">...</span>
+              <div className="tooltip">
+                Zeplin , Adobe XD, Adobe Photoshop, Adobe Illustrator
+              </div>
+            </div>
           </div>
 
           <div className="content__item">
-            <strong className="content__subtit">Experience</strong>
+            <strong className="content__subtit">Certificate</strong>
             <dl>
               <dt>2022. 04</dt>
               <dd>웹디자인 기능사</dd>
