@@ -1,6 +1,7 @@
 import React from "react";
 
 // todo :: 흘러가는 텍스트?
+// todo :: text 클래스 정리해보자 txt-tit, txt-hash
 
 function Connect() {
   return (
@@ -8,30 +9,58 @@ function Connect() {
       <div className="inner">
         {/* left*/}
         <div className="content">
-          <strong className="content__tit">연결</strong>
-          <strong className="">패기있는 문구</strong>
-          <ul>
-            <li>
-              <strong>키워드</strong>
-              <p>내용5줄 내용5줄 내용5줄 내용5줄 내용5줄 내용5줄</p>
-              <span>키워드</span>
+          <strong className="content__tit">
+            연결
+            <strong className="tit">
+              배움을 멈출 줄 모르는
+              <br />
+              전문가가 되겠습니다.
+            </strong>
+          </strong>
+
+          <ul className="connect-list">
+            <li className="connect-list__item">
+              <strong className="connect-list__tit">키워드</strong>
+              <p className="connect-list__dsc">
+                키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
+                상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
+                키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
+                상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
+              </p>
+              <span className="connect-list__hash">
+                &#35;해시태그 &#35;해시태그 &#35;해시태그
+              </span>
             </li>
-            <li>
-              <strong>키워드</strong>
-              <p>내용5줄 내용5줄 내용5줄 내용5줄 내용5줄 내용5줄</p>
-              <span>키워드</span>
+            <li className="connect-list__item">
+              <strong className="connect-list__tit">키워드</strong>
+              <p className="connect-list__dsc">
+                키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
+                상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
+                키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
+                상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
+              </p>
+              <span className="connect-list__hash">
+                &#35;해시태그 &#35;해시태그 &#35;해시태그
+              </span>
             </li>
-            <li>
-              <strong>키워드</strong>
-              <p>내용5줄 내용5줄 내용5줄 내용5줄 내용5줄 내용5줄</p>
-              <span>키워드</span>
+            <li className="connect-list__item">
+              <strong className="connect-list__tit">키워드</strong>
+              <p className="connect-list__dsc">
+                키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
+                상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
+                키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
+                상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
+              </p>
+              <span className="connect-list__hash">
+                &#35;해시태그 &#35;해시태그 &#35;해시태그
+              </span>
             </li>
           </ul>
         </div>
 
-        {/* right*/}
+        {/* absolute*/}
         <div className="content">
-          <strong>바로 연결</strong>
+          <strong className="tit">저와 함께해요</strong>
           <div className="content__img">
             <img src="" alt="" className="img" />
           </div>
