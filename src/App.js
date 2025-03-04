@@ -6,6 +6,7 @@ import Visual from "./components/pages/Visual";
 import Profile from "./components/pages/Profile";
 import Project from "./components/pages/Project";
 import Notes from "./components/pages/Notes";
+import Core from "./components/pages/Core";
 import Connect from "./components/pages/Connect";
 import Footer from "./components/footer/Footer";
 
@@ -23,6 +24,7 @@ function App() {
           <Profile />
           <Project />
           <Notes />
+          <Core />
           <Connect />
         </main>
         <Footer />

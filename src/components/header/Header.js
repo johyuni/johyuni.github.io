@@ -30,6 +30,9 @@ function Header() {
         <a href="/" role="button" className="header__link" aria-label="노트">
           Notes
         </a>
+        <a href="/" role="button" className="header__link" aria-label="핵심">
+          Core
+        </a>
         <a href="/" role="button" className="header__link" aria-label="연결">
           Connect
         </a>
