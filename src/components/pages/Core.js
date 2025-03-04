@@ -15,40 +15,40 @@ function Core() {
             </strong>
           </strong>
 
-          <ul className="connect-list">
-            <li className="connect-list__item">
-              <strong className="connect-list__tit">소통</strong>
-              <p className="connect-list__dsc">
+          <ul className="core-list">
+            <li className="core-list__item">
+              <strong className="core-list__tit">소통</strong>
+              <p className="core-list__dsc">
                 키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
                 키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
               </p>
-              <span className="connect-list__hash">
+              <span className="core-list__hash">
                 &#35;해시태그 &#35;해시태그 &#35;해시태그
               </span>
             </li>
-            <li className="connect-list__item">
-              <strong className="connect-list__tit">기술</strong>
-              <p className="connect-list__dsc">
+            <li className="core-list__item">
+              <strong className="core-list__tit">기술</strong>
+              <p className="core-list__dsc">
                 키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
                 키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
               </p>
-              <span className="connect-list__hash">
+              <span className="core-list__hash">
                 &#35;해시태그 &#35;해시태그 &#35;해시태그
               </span>
             </li>
-            <li className="connect-list__item">
-              <strong className="connect-list__tit">상생</strong>
-              <p className="connect-list__dsc">
+            <li className="core-list__item">
+              <strong className="core-list__tit">상생</strong>
+              <p className="core-list__dsc">
                 키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
                 키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
               </p>
-              <span className="connect-list__hash">
+              <span className="core-list__hash">
                 &#35;해시태그 &#35;해시태그 &#35;해시태그
               </span>
             </li>
