@@ -7,7 +7,7 @@ function Profile() {
       <div className="inner">
         {/* left */}
         <div className="content">
-          <strong className="content__tit">
+          <strong className="typo-header">
             밝은 에너지와 경청하는 자세로
             <br />
             꾸준히 성장하는 조현희입니다.

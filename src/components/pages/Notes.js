@@ -30,7 +30,7 @@ function Notes() {
       <div className="inner">
         {/* top */}
         <div className="content">
-          <strong className="content__tit">노트</strong>
+          <strong className="typo-header">노트</strong>
 
           <div className="input-box">
             <input

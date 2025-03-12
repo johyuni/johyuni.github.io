@@ -6,9 +6,6 @@
   }
 
   .content {
-    &__tit {
-      color: $color_black;
-    }
     &__tag {
       margin-top: 1.2rem;
     }
@@ -24,6 +21,13 @@
           color: $color_bgray1;
         }
       }
+    }
+  }
+
+  // typo
+  .typo {
+    &-header {
+      color: $color_black;
     }
   }
 

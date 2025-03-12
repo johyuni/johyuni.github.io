@@ -7,7 +7,7 @@ function Core() {
       <div className="inner">
         {/* left*/}
         <div className="content">
-          <strong className="content__tit">
+          <strong className="typo-header">
             핵심 역량
             <strong className="tit">
               같은 목표를 가지면
