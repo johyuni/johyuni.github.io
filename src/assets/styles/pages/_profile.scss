@@ -1,3 +1,5 @@
+// typo 정의 기준 :: 달랑 텍스크만 있을때
+// typo 정의 기준 :: 컴포넌트나 콘텐츠 안에있을때는 bem으로
 .main__profile {
   background-color: $color_gray1;
   .inner {
@@ -5,98 +7,99 @@
     gap: 0 6rem;
   }
 
-  // 우측콘텐츠
+  // 좌
+  .typo {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 37rem;
+    height: 100%;
+    &__link {
+      margin-top: 3rem;
+    }
+    &__link a {
+      @include typo_body3;
+      color: $color_gray4;
+      &:hover {
+        color: $color_gray3;
+      }
+    }
+    &__body3 {
+      margin-top: auto;
+      color: $color_gray4;
+    }
+  }
+
+  // 우
   .content {
-    &:first-of-type {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-direction: column;
-      flex-shrink: 0;
-      width: 37rem;
-      border-right: 1px solid $color_gray1;
-      .content__link {
-        margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-left: 1px solid $color_gray2;
+    padding-left: 6rem;
+    &__item {
+      padding: 2rem;
+      span:first-of-type,
+      dt:first-of-type,
+      dd:first-of-type {
+        margin: 0;
+      }
+      dl,
+      .content__tag,
+      &:first-of-type span:first-of-type {
+        margin-top: 1.2rem;
       }
     }
 
-    // 좌측콘텐츠
-    &:last-of-type {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border-left: 1px solid $color_gray2;
-      padding-left: 6rem;
-      .content__item {
-        padding: 2rem;
-        &:first-of-type span {
-          display: block;
-          font-family: Consolas;
-          font-size: 1.4rem;
-        }
+    &__tit {
+      @include typo_body3;
+      font-family: Consolas;
+      color: $color_primary;
+      &::before {
+        content: "<";
+      }
+      &::after {
+        content: ">";
+      }
+      &::before,
+      &::after {
+        display: inline-block;
+        color: $color_gray3;
+        font-size: 1.6rem;
+      }
+    }
 
-        .content__subtit {
-          font-family: Consolas;
-          font-size: 1.6rem;
-          color: $color_primary;
-          & + span,
-          & + dl {
-            margin-top: 1.2rem;
-          }
-          &::before {
-            content: "<";
-          }
-          &::after {
-            content: ">";
-          }
-          &::before,
-          &::after {
-            display: inline-block;
-            color: $color_gray3;
-            font-size: 1.8rem;
-            font-weight: 600;
-          }
-        }
+    span,
+    dt,
+    dd {
+      color: $color_gray5;
+      margin-top: 0.8rem;
+    }
+    span {
+      display: block;
+      @include typo_body3;
+      font-family: Consolas;
+    }
+    dt {
+      @include typo_body3;
+      display: inline-block;
+      width: 16rem;
+      font-family: Consolas;
+    }
+    dd {
+      font-size: 1.3rem;
+      display: inline-block;
+      width: calc(100% - 16.8rem);
+      padding-left: 0.8rem;
+      vertical-align: top;
+      line-height: 150%;
+    }
 
-        dt,
-        dd,
-        span {
-          font-size: 1.4rem;
-          word-break: keep-all;
-          color: $color_gray5;
-        }
-
-        dt:not(:first-of-type),
-        dd:not(:first-of-type),
-        span:not(:first-of-type),
-        .content__tag {
-          margin-top: 0.8rem;
-        }
-
-        dt {
-          width: 16rem;
-          font-size: 1.4rem;
-          font-family: Consolas;
-        }
-        dd {
-          width: calc(100% - 16.8rem);
-          padding-left: 0.8rem;
-          font-size: 1.3rem;
-          line-height: 150%;
-          vertical-align: top;
-        }
-        dt,
-        dd {
-          display: inline-block;
-        }
-
-        .content__tag .tag {
-          margin: 0;
-          &:last-of-type {
-            cursor: pointer;
-          }
-          &:last-of-type:hover ~ .tooltip {
-            opacity: 1;
-          }
+    &__tag .tag {
+      margin-top: 0;
+      &:last-of-type {
+        cursor: pointer;
+        &:hover ~ .tooltip {
+          opacity: 1;
         }
       }
     }

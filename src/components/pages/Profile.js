@@ -6,18 +6,16 @@ function Profile() {
     <section className="main__profile">
       <div className="inner">
         {/* left */}
-        <div className="content">
-          <strong className="typo-header">
+        <div className="typo">
+          <strong className="typo__header">
             밝은 에너지와 경청하는 자세로
             <br />
             꾸준히 성장하는 조현희입니다.
-            <div className="content__link">
-              <Link to="" className="link">
-                소개 더보기
-              </Link>
-            </div>
           </strong>
-          <p className="content__dsc">
+          <div className="typo__link">
+            <Link to="">소개 더보기</Link>
+          </div>
+          <p className="typo__body3">
             간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글
             영역입니다 간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한
             소개글 영역입니다 간단한 소개글 영역입니다
@@ -27,14 +25,14 @@ function Profile() {
         {/* right */}
         <div className="content">
           <div className="content__item">
-            <strong className="content__subtit">Information</strong>
+            <strong className="content__tit">Information</strong>
             <span>1995.02.06</span>
             <span>&#43;82&#41; 10&#45;4068&#45;2252</span>
             <span>2252hyun&#64;gmail.com</span>
           </div>
 
           <div className="content__item">
-            <strong className="content__subtit">Education</strong>
+            <strong className="content__tit">Education</strong>
             <dl>
               <dt>2022</dt>
               <dd>
@@ -49,7 +47,7 @@ function Profile() {
           </div>
 
           <div className="content__item">
-            <strong className="content__subtit">Experience</strong>
+            <strong className="content__tit">Experience</strong>
             <dl>
               <dt>2023. 11 &#126; 2024. 09</dt>
               <dd>주식회사 버치홀딩스 퍼블리셔</dd>
@@ -67,7 +65,7 @@ function Profile() {
           </div>
 
           <div className="content__item">
-            <strong className="content__subtit">Tools</strong>
+            <strong className="content__tit">Tools</strong>
             <div className="content__tag">
               <span className="tag tag--s">HTML5</span>
               <span className="tag tag--s">CSS3</span>
@@ -85,7 +83,7 @@ function Profile() {
           </div>
 
           <div className="content__item">
-            <strong className="content__subtit">Certificate</strong>
+            <strong className="content__tit">Certificate</strong>
             <dl>
               <dt>2022. 04</dt>
               <dd>웹디자인 기능사</dd>
