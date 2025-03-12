@@ -1,5 +1,5 @@
 // todo :: 스와이퍼에 대한 CSS를 따로 옮겨야할까?
-// todo :: 링크연결 및 호버효과 적용 필요
+// todo :: 링크연결 필요
 
 .main__project {
   background-color: $color_black;
@@ -18,75 +18,71 @@
 .swiper-wrapper .swiper-slide {
   @include flex_center;
   gap: 0 4rem;
-  font-size: 1.8rem;
+  position: relative;
   background-color: $color_black;
 }
 
-// text
-.slide-text {
-  text-align: left;
-  word-break: keep-all;
-  .tit {
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 1.3;
+// typo
+.typo {
+  &__tit {
     color: $color_white;
   }
-  .dsc {
+  &__body3 {
     margin-top: 1.6rem;
-    font-size: 1.4rem;
-    line-height: 1.8;
     color: $color_gray5;
   }
-}
-.slide-img {
-  flex-shrink: 0;
-  width: 44rem;
-  height: 100%;
-  background-color: #4d49fc;
-  .img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-.slide-link {
-  width: calc(100% - 96rem);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  .link {
-    display: block;
-    padding: 1.6rem 2rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: $color_gray5;
-    background-color: $color_black;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      background-color: $color_gray1;
+  &__box {
+    position: absolute;
+    bottom: 10rem;
+    left: 0;
+    width: auto;
+    z-index: 10;
+    .num {
+      @include typo_body3;
+      color: $color_gray4;
+      &:first-child::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 1rem;
+        width: 2.5rem;
+        height: 0.2rem;
+        background-color: $color_gray4;
+      }
     }
   }
 }
-.slide-number {
-  position: absolute;
-  z-index: 10;
-  bottom: 10rem;
-  left: 0;
-  width: 100%;
-  .num {
-    color: $color_gray4;
-    font-size: 1.6rem;
-    &:first-child::after {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 1rem;
-      width: 2.5rem;
-      height: 0.2rem;
-      background-color: $color_gray4;
+
+// 슬라이드 이미지 & 링크
+.slide {
+  &__img {
+    flex-shrink: 0;
+    width: 44rem;
+    height: 100%;
+    background-color: #4d49fc;
+    .img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__link {
+    width: calc(100% - 96rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .link {
+      @include typo_body1;
+      display: block;
+      padding: 1.6rem 2rem;
+      color: $color_gray5;
+      background-color: $color_black;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: $color_gray1;
+      }
     }
   }
 }
