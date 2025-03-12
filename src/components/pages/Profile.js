@@ -12,8 +12,10 @@ function Profile() {
             <br />
             꾸준히 성장하는 조현희입니다.
           </strong>
-          <div className="typo__link">
-            <Link to="">소개 더보기</Link>
+          <div className="typo__box">
+            <Link to="" className="link">
+              소개 더보기
+            </Link>
           </div>
           <p className="typo__body3">
             간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글

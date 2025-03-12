@@ -87,7 +87,7 @@
   &__body3 {
     @include typo_body3;
   }
-  &__link a {
+  &__box .link {
     display: block;
     transition: all 0.2s ease-in-out;
   }

@@ -1,5 +1,6 @@
 // typo 정의 기준 :: 달랑 텍스크만 있을때
 // typo 정의 기준 :: 컴포넌트나 콘텐츠 안에있을때는 bem으로
+
 .main__profile {
   background-color: $color_gray1;
   .inner {
@@ -14,10 +15,10 @@
     flex-shrink: 0;
     width: 37rem;
     height: 100%;
-    &__link {
+    &__box {
       margin-top: 3rem;
     }
-    &__link a {
+    &__box .link {
       @include typo_body3;
       color: $color_gray4;
       &:hover {

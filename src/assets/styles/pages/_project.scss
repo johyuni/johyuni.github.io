@@ -20,34 +20,34 @@
   gap: 0 4rem;
   position: relative;
   background-color: $color_black;
-}
 
-// typo
-.typo {
-  &__tit {
-    color: $color_white;
-  }
-  &__body3 {
-    margin-top: 1.6rem;
-    color: $color_gray5;
-  }
-  &__box {
-    position: absolute;
-    bottom: 10rem;
-    left: 0;
-    width: auto;
-    z-index: 10;
-    .num {
-      @include typo_body3;
-      color: $color_gray4;
-      &:first-child::after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 1rem;
-        width: 2.5rem;
-        height: 0.2rem;
-        background-color: $color_gray4;
+  // typo
+  .typo {
+    &__tit {
+      color: $color_white;
+    }
+    &__body3 {
+      margin-top: 1.6rem;
+      color: $color_gray5;
+    }
+    &__box {
+      position: absolute;
+      bottom: 10rem;
+      left: 0;
+      width: auto;
+      z-index: 10;
+      .num {
+        @include typo_body3;
+        color: $color_gray4;
+        &:first-child::after {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 1rem;
+          width: 2.5rem;
+          height: 0.2rem;
+          background-color: $color_gray4;
+        }
       }
     }
   }
