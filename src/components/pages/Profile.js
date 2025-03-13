@@ -84,7 +84,7 @@ function Profile() {
             </div>
 
             <div className="grid__item">
-              <strong className="content__tit">Certificate</strong>
+              <strong className="grid__tit">Certificate</strong>
               <dl>
                 <dt>2022. 04</dt>
                 <dd>웹디자인 기능사</dd>

@@ -5,85 +5,74 @@
     justify-content: space-between;
   }
 
-  .content {
-    &__tag {
+  // tit
+  .main__tit {
+    color: $color_black;
+  }
+
+  // content
+  .main__content {
+    height: auto;
+    .inputbox {
+      margin-top: 4rem;
+      .input {
+        display: block;
+        height: 4.8rem;
+        width: 100%;
+        padding: 0 1.6rem;
+        border: 1px solid $color_gray5;
+        border-radius: 0.4rem;
+        background-color: $color_white;
+        box-sizing: border-box;
+        &::placeholder {
+          color: $color_gray4;
+        }
+      }
+    }
+
+    .tagbox {
       margin-top: 1.2rem;
     }
-    &__link {
-      width: 100%;
+
+    .list {
       margin-top: 3rem;
+      &__item {
+        min-width: 0;
+        transition: all 0.3s ease-in-out;
+        background-color: $color_white;
+        &:hover {
+          background-color: $color_bgray4;
+        }
+      }
+    }
+
+    .txt {
+      @include flex;
+      gap: 4rem;
       width: 100%;
-      height: 4rem;
-      text-align: center;
-      .link {
+      padding: 4rem 2.6rem;
+      &__body4 {
+        flex-shrink: 0;
+        color: $color_gray4;
+      }
+      &__body1 {
+        flex-shrink: 0;
+        display: block;
+        width: 13rem;
+        color: $color_bgray1;
+      }
+      &__body3 {
+        @include ellipse;
+        color: $color_bgray2;
+      }
+      &__link {
+        margin-top: 3rem;
+        text-align: center;
         color: $color_bgray2;
         &:hover {
           color: $color_bgray1;
         }
       }
-    }
-  }
-
-  // typo
-  .typo {
-    &-header {
-      color: $color_black;
-    }
-  }
-
-  .input-box {
-    margin-top: 4rem;
-    .input {
-      display: block;
-      height: 4.8rem;
-      width: 100%;
-      padding: 0 1.6rem;
-      border: 1px solid $color_gray5;
-      border-radius: 0.4rem;
-      background-color: $color_white;
-      box-sizing: border-box;
-      &::placeholder {
-        color: $color_gray4;
-      }
-    }
-  }
-
-  // list
-  .note-list {
-    display: grid;
-    margin-top: 3rem;
-    &__item {
-      padding: 4rem 2.6rem;
-      min-width: 0;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        background-color: $color_bgray4;
-      }
-    }
-    &__link {
-      @include flex;
-      gap: 4rem;
-      width: 100%;
-    }
-    &__num {
-      flex-shrink: 0;
-      font-size: 1.2rem;
-      color: $color_gray4;
-      font-weight: 500;
-    }
-    &__tit {
-      flex-shrink: 0;
-      display: block;
-      width: 13rem;
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: $color_bgray1;
-    }
-    &__dsc {
-      @include ellipse;
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: $color_bgray2;
     }
   }
 }

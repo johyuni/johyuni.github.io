@@ -1,87 +1,86 @@
-// todo :: 스와이퍼에 대한 CSS를 따로 옮겨야할까?
 // todo :: 링크연결 필요
 
 .main__project {
   background-color: $color_black;
-  .content {
+  .main__content {
     height: 100%;
     @include flex_between;
     gap: 0 6rem;
-  }
-}
-// SwiperSlide (Text + img + number)
-.swiper {
-  width: 92rem;
-  height: 100%;
-  margin: 0;
-}
-.swiper-wrapper .swiper-slide {
-  @include flex_center;
-  gap: 0 4rem;
-  position: relative;
-  background-color: $color_black;
 
-  // typo
-  .typo {
-    &__tit {
-      color: $color_white;
+    // SwiperSlide
+    .swiper {
+      width: 92rem;
+      height: 100%;
+      margin: 0;
+      .swiper-slide {
+        @include flex_center;
+        gap: 0 4rem;
+        position: relative;
+        background-color: $color_black;
+      }
     }
-    &__body3 {
-      margin-top: 1.6rem;
-      color: $color_gray5;
-    }
-    &__box {
-      position: absolute;
-      bottom: 10rem;
-      left: 0;
-      width: auto;
-      z-index: 10;
-      .num {
-        @include typo_body3;
-        color: $color_gray4;
-        &:first-child::after {
-          content: "";
-          display: inline-block;
-          vertical-align: middle;
-          margin: 0 1rem;
-          width: 2.5rem;
-          height: 0.2rem;
-          background-color: $color_gray4;
+
+    // txt
+    .txt {
+      &__tit {
+        color: $color_white;
+      }
+      &__body3 {
+        margin-top: 1.6rem;
+        color: $color_gray5;
+      }
+      &__box {
+        position: absolute;
+        bottom: 10rem;
+        left: 0;
+        width: auto;
+        z-index: 10;
+        .txt__body3 {
+          color: $color_gray4;
+          &:first-child::after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 1rem;
+            width: 2.5rem;
+            height: 0.2rem;
+            background-color: $color_gray4;
+          }
         }
       }
     }
-  }
-}
 
-// 슬라이드 이미지 & 링크
-.slide {
-  &__img {
-    flex-shrink: 0;
-    width: 44rem;
-    height: 100%;
-    background-color: #4d49fc;
+    // img
+    .imgbox {
+      flex-shrink: 0;
+      width: 44rem;
+      height: 100%;
+      background-color: #4d49fc;
+    }
     .img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-  }
-  &__link {
-    width: calc(100% - 96rem);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    .link {
-      @include typo_body1;
-      display: block;
-      padding: 1.6rem 2rem;
-      color: $color_gray5;
-      background-color: $color_black;
-      transition: all 0.2s ease-in-out;
-      &:hover {
-        background-color: $color_gray1;
+
+    // list
+    .list {
+      width: calc(100% - 96rem);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      &__item {
+        @include txt_body1;
+        display: block;
+        padding: 1.6rem 2rem;
+        color: $color_gray5;
+        background-color: $color_black;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: $color_gray1;
+        }
       }
     }
   }

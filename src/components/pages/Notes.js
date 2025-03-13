@@ -28,11 +28,10 @@ function Notes() {
   return (
     <section className="main__notes">
       <div className="inner">
-        {/* top */}
-        <div className="content">
-          <strong className="typo-header">노트</strong>
+        <strong className="main__tit">노트</strong>
 
-          <div className="input-box">
+        <div className="main__content">
+          <div className="inputbox">
             <input
               id="input"
               type="text"
@@ -44,35 +43,33 @@ function Notes() {
             <i></i>
           </div>
 
-          <div className="content__tag">
-            <span className="tag">Design System</span>
-            <span className="tag">Clone-Coding</span>
-            <span className="tag">Code Editor</span>
-            <span className="tag">Git</span>
-            <span className="tag">BEM</span>
-            <span className="tag">localhost</span>
+          <div className="tagbox">
+            <span className="hash">Design System</span>
+            <span className="hash">Clone-Coding</span>
+            <span className="hash">Code Editor</span>
+            <span className="hash">Git</span>
+            <span className="hash">BEM</span>
+            <span className="hash">localhost</span>
           </div>
 
           {/* list */}
-          <ul className="note-list">
+          <ul className="list">
             {list.map((item) => (
-              <li key={item.name} className="note-list__item">
-                <Link to={item.link} className="note-list__link">
-                  <span className="note-list__num">{item.id}</span>
-                  <strong className="note-list__tit">{item.name}</strong>
-                  <span className="note-list__dsc">{item.dsc}</span>
-                  <i className="note-list__ico"></i>
+              <li key={item.name} className="list__item">
+                <Link to={item.link} className="txt">
+                  <span className="txt__body4">{item.id}</span>
+                  <strong className="txt__body1">{item.name}</strong>
+                  <span className="txt__body3">{item.dsc}</span>
+                  <i className="ico"></i>
                 </Link>
               </li>
             ))}
           </ul>
 
-          <div className="content__link">
-            <Link to="" className="link">
-              더보기 버튼
-            </Link>
-            {/* 아래쪽 화살표로 대체할것  */}
-          </div>
+          <Link to="" className="txt__link">
+            더보기 버튼
+          </Link>
+          {/* 아래쪽 화살표로 대체할것  */}
         </div>
       </div>
     </section>

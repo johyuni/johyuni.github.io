@@ -1,91 +1,10 @@
-// typo 정의 기준 :: 달랑 텍스크만 있을때
-// typo 정의 기준 :: 컴포넌트나 콘텐츠 안에있을때는 bem으로
-
-.main__profile {
-  // 우
-  .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-left: 1px solid $color_gray2;
-    padding-left: 6rem;
-    &__item {
-      padding: 2rem;
-      span:first-of-type,
-      dt:first-of-type,
-      dd:first-of-type {
-        margin: 0;
-      }
-      dl,
-      .content__tag,
-      &:first-of-type span:first-of-type {
-        margin-top: 1.2rem;
-      }
-    }
-
-    &__tit {
-      @include typo_body3;
-      font-family: Consolas;
-      color: $color_primary;
-      &::before {
-        content: "<";
-      }
-      &::after {
-        content: ">";
-      }
-      &::before,
-      &::after {
-        display: inline-block;
-        color: $color_gray3;
-        font-size: 1.6rem;
-      }
-    }
-
-    span,
-    dt,
-    dd {
-      color: $color_gray5;
-      margin-top: 0.8rem;
-    }
-    span {
-      display: block;
-      @include typo_body3;
-      font-family: Consolas;
-    }
-    dt {
-      @include typo_body3;
-      display: inline-block;
-      width: 16rem;
-      font-family: Consolas;
-    }
-    dd {
-      font-size: 1.3rem;
-      display: inline-block;
-      width: calc(100% - 16.8rem);
-      padding-left: 0.8rem;
-      vertical-align: top;
-      line-height: 150%;
-    }
-
-    &__tag .tag {
-      margin-top: 0;
-      &:last-of-type {
-        cursor: pointer;
-        &:hover ~ .tooltip {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
-
 .main__profile {
   background-color: $color_gray1;
-
   .main__content {
     @include flex;
     gap: 0 6rem;
 
-    // 좌측
+    // txt
     .txt {
       display: flex;
       flex-direction: column;
@@ -105,7 +24,7 @@
       }
     }
 
-    // 우측
+    // grid
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -126,7 +45,7 @@
         }
       }
       &__tit {
-        @include typo_body3;
+        @include txt_body3;
         font-family: Consolas;
         color: $color_primary;
         &::before {
@@ -150,11 +69,11 @@
       }
       span {
         display: block;
-        @include typo_body3;
+        @include txt_body3;
         font-family: Consolas;
       }
       dt {
-        @include typo_body3;
+        @include txt_body3;
         display: inline-block;
         width: 16rem;
         font-family: Consolas;
@@ -168,6 +87,7 @@
         line-height: 150%;
       }
 
+      // tag
       .tagbox {
         .tag:last-of-type {
           cursor: pointer;
