@@ -1,22 +1,5 @@
-// layout
-.main {
-  background-color: $color_black;
-  section:not(.main__connect) {
-    height: calc(100vh - 22rem);
-    padding: 11rem 0;
-  }
-  .inner {
-    position: relative;
-    max-width: 140rem;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-}
-
-// typo
 .content {
-  height: 100%;
+  // 쓰인곳 없는지 확인해보고 지우기
   &__dsc {
     display: block;
     font-size: 1.4rem;
@@ -35,39 +18,64 @@
       }
     }
   }
+}
 
-  // component
-  &__tag {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    .tag {
-      margin: 0;
-      flex-shrink: 0;
-      padding: 6px 14px;
-      font-size: 1.2rem;
-      font-weight: 500;
-      border-radius: 2rem;
-      background-color: $color_bgray3;
-      color: $color_bgray2;
-    }
-    .tag--s {
-      height: 100%;
-      padding: 0.2rem 0.6rem;
-      border-radius: 0.4rem;
-      background-color: $color_gray2;
-      font-family: Consolas;
-    }
+// 태그구조 엄수
+.main {
+  background-color: $color_black;
+  section:not(.main__connect) {
+    height: calc(100vh - 22rem);
+    padding: 11rem 0;
   }
-  .tooltip {
-    opacity: 0;
-    width: 22rem;
-    border: 1px solid $color_gray3;
-    background-color: $color_gray1;
-    color: #569cd6;
-    font-size: 1.4rem;
+
+  .inner {
+    position: relative;
+    max-width: 140rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  &__tit {
+    @include typo_header;
+  }
+  &__content {
+    height: 100%;
+  }
+}
+
+// component
+.tagbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  .tag {
+    height: 100%;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+    background-color: $color_gray2;
     font-family: Consolas;
-    padding: 0.6rem 1rem;
-    transition: all 0.4s ease-in-out;
+    color: $color_gray5;
   }
+  .hash {
+    margin: 0;
+    flex-shrink: 0;
+    padding: 6px 14px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    background-color: $color_bgray3;
+    color: $color_bgray2;
+  }
+}
+
+.tooltip {
+  opacity: 0;
+  width: 22rem;
+  border: 1px solid $color_gray3;
+  background-color: $color_gray1;
+  color: #569cd6;
+  font-size: 1.4rem;
+  font-family: Consolas;
+  padding: 0.6rem 1rem;
+  transition: all 0.4s ease-in-out;
 }

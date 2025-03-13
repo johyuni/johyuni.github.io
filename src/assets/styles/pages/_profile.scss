@@ -2,35 +2,6 @@
 // typo 정의 기준 :: 컴포넌트나 콘텐츠 안에있을때는 bem으로
 
 .main__profile {
-  background-color: $color_gray1;
-  .inner {
-    @include flex;
-    gap: 0 6rem;
-  }
-
-  // 좌
-  .typo {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    width: 37rem;
-    height: 100%;
-    &__box {
-      margin-top: 3rem;
-    }
-    &__box .link {
-      @include typo_body3;
-      color: $color_gray4;
-      &:hover {
-        color: $color_gray3;
-      }
-    }
-    &__body3 {
-      margin-top: auto;
-      color: $color_gray4;
-    }
-  }
-
   // 우
   .content {
     display: grid;
@@ -100,6 +71,108 @@
       &:last-of-type {
         cursor: pointer;
         &:hover ~ .tooltip {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.main__profile {
+  background-color: $color_gray1;
+
+  .main__content {
+    @include flex;
+    gap: 0 6rem;
+
+    // 좌측
+    .txt {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      width: 37rem;
+      height: 100%;
+      &__link {
+        margin-top: 2rem;
+        color: $color_gray4;
+        &:hover {
+          color: $color_gray3;
+        }
+      }
+      &__body3 {
+        margin-top: auto;
+        color: $color_gray4;
+      }
+    }
+
+    // 우측
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-left: 1px solid $color_gray2;
+      padding-left: 6rem;
+      height: 100%;
+      &__item {
+        padding: 2rem;
+        span:first-of-type,
+        dt:first-of-type,
+        dd:first-of-type {
+          margin: 0;
+        }
+        dl,
+        .tagbox,
+        &:first-of-type span:first-of-type {
+          margin-top: 1.2rem;
+        }
+      }
+      &__tit {
+        @include typo_body3;
+        font-family: Consolas;
+        color: $color_primary;
+        &::before {
+          content: "<";
+        }
+        &::after {
+          content: ">";
+        }
+        &::before,
+        &::after {
+          display: inline-block;
+          color: $color_gray3;
+          font-size: 1.6rem;
+        }
+      }
+      span:not(.tag),
+      dt,
+      dd {
+        color: $color_gray5;
+        margin-top: 0.8rem;
+      }
+      span {
+        display: block;
+        @include typo_body3;
+        font-family: Consolas;
+      }
+      dt {
+        @include typo_body3;
+        display: inline-block;
+        width: 16rem;
+        font-family: Consolas;
+      }
+      dd {
+        font-size: 1.3rem;
+        display: inline-block;
+        width: calc(100% - 16.8rem);
+        padding-left: 0.8rem;
+        vertical-align: top;
+        line-height: 150%;
+      }
+
+      .tagbox {
+        .tag:last-of-type {
+          cursor: pointer;
+        }
+        .tag:last-of-type:hover ~ .tooltip {
           opacity: 1;
         }
       }

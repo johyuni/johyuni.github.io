@@ -70,7 +70,8 @@
   line-height: 135%;
 }
 
-.typo {
+// todo :: __가 아니라 모디파이어 --로가야하나 ?
+.txt {
   word-break: keep-all;
   &__header {
     @include typo_header;
@@ -87,7 +88,8 @@
   &__body3 {
     @include typo_body3;
   }
-  &__box .link {
+  &__link {
+    @include typo_body3;
     display: block;
     transition: all 0.2s ease-in-out;
   }
