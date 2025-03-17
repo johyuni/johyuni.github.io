@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// todo :: 전화연결, 메일보내기 해당하는 속성으로 설정할것
-
 function Footer() {
   return (
     <footer className="footer">

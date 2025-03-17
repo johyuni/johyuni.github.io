@@ -1,4 +1,16 @@
 // 태그구조 엄수
+
+// todo
+// 1. header :: skip nav
+// 2. header :: 메뉴 앵커 부드럽게 처리
+// 3. Project :: 리스트 호버시 해당 프로젝트 보이도록처리
+// 4. Project :: 링크 연결
+// 5. Project :: 리스트 map으로 돌리기
+// 6. note :: 링크 연결
+// 7. note :: 세로 스크롤처리
+// 8. note :: 리스트 자동 넘버링
+// 9. footer :: 링크연결
+
 .main {
   background-color: $color_black;
   section:not(.main__connect) {
@@ -18,6 +30,34 @@
   }
   &__content {
     height: 100%;
+  }
+}
+
+// text
+.txt {
+  word-break: keep-all;
+  &__header {
+    @include txt_header;
+  }
+  &__tit {
+    @include txt_tit;
+  }
+  &__body1 {
+    @include txt_body1;
+  }
+  &__body2 {
+    @include txt_body2;
+  }
+  &__body3 {
+    @include txt_body3;
+  }
+  &__link {
+    @include txt_body3;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  &__body4 {
+    @include txt_body4;
   }
 }
 

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 function Notes() {
   // list 배열 생성
-  // todo :: 자동 넘버링 되도록 구현해볼것
   const list = [
     {
       id: "(1)",

@@ -1,9 +1,3 @@
-// todo :: skip nav를 만들어야할까?
-// todo :: nav를 ui>li>a 구조  아님 nav>a 구조?
-// todo :: 메뉴를 클릭할때 해당섹션으로 부드럽게 포커스되어야함
-// todo :: 이 컴포넌트를 app.js에 연결해서 메인페이지에 보이도록 하기
-// todo :: .header__nav 필요할지?
-
 import React from "react";
 
 function Header() {

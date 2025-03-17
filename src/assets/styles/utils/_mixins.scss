@@ -28,10 +28,7 @@
   -webkit-box-orient: vertical;
 }
 
-//타이포시작
-//타이포시작
-
-// 맨위 텍스트 :: .txt__header
+//typo
 @mixin txt_header {
   font-size: 1.8rem;
   font-weight: 600;
@@ -39,63 +36,30 @@
   color: $color_white;
   display: block;
 }
-// 메인텍스트 :: .txt__tit
 @mixin txt_tit {
   display: block;
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.3;
 }
-// 리스트 타이틀 :: .txt__body1
 @mixin txt_body1 {
   font-size: 1.8rem;
   font-weight: 600;
 }
-// 리스트 내용 :: .txt__body2
 @mixin txt_body2 {
   padding-top: 2rem;
   font-size: 1.6rem;
   line-height: 140%;
 }
-// 설명글, 링크 :: .txt__body3
 @mixin txt_body3 {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.4;
 }
-// 태그 .txt__body4
 @mixin txt_body4 {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 135%;
-}
-
-// todo :: __가 아니라 모디파이어 --로가야하나 ?
-.txt {
-  word-break: keep-all;
-  &__header {
-    @include txt_header;
-  }
-  &__tit {
-    @include txt_tit;
-  }
-  &__body1 {
-    @include txt_body1;
-  }
-  &__body2 {
-    @include txt_body2;
-  }
-  &__body3 {
-    @include txt_body3;
-  }
-  &__link {
-    @include txt_body3;
-    display: block;
-    transition: all 0.2s ease-in-out;
-  }
-  &__body4 {
-    @include txt_body4;
-  }
 }
 
 // 정렬

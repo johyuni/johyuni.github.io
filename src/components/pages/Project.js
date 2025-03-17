@@ -77,8 +77,6 @@ function Project() {
             </SwiperSlide>
           </Swiper>
 
-          {/* todo :: 여기에 프로젝트 링크추가  */}
-          {/* todo :: map으로 돌릴지 고민해보고 개선 */}
           <div className="list">
             <Link to="" target="" className="list__item">
               프로젝트 제목 01
