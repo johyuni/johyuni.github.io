@@ -2,7 +2,7 @@ import React from "react";
 
 function Core() {
   return (
-    <section className="main__core">
+    <section id="core" className="main__core">
       <div className="inner">
         <strong className="main__tit">핵심 역량</strong>
 

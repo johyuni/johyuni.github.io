@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Profile() {
   return (
-    <section className="main__profile">
+    <section id="profile" className="main__profile">
       <div className="inner">
         <div className="main__content">
           {/* left */}

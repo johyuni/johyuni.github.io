@@ -11,7 +11,12 @@
 // 9. footer :: 링크연결
 // 10. 공통 :: 컬러팔레트 정리
 
-// skip-nav
+// html
+html {
+  scroll-behavior: smooth;
+}
+
+// skip
 .skip {
   &__link {
     @include txt_body2;
@@ -36,13 +41,13 @@
   }
 }
 
+// main
 .main {
   background-color: $color_black;
   section:not(.main__connect) {
     height: calc(100vh - 22rem);
     padding: 11rem 0;
   }
-
   .inner {
     position: relative;
     max-width: 140rem;

@@ -7,7 +7,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 
 function Project() {
   return (
-    <section className="main__project">
+    <section id="project" className="main__project">
       <div className="inner">
         <strong className="main__tit">프로젝트</strong>
 

@@ -25,7 +25,7 @@ function Notes() {
   ];
 
   return (
-    <section className="main__notes">
+    <section id="notes" className="main__notes">
       <div className="inner">
         <strong className="main__tit">노트</strong>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function Connect() {
   return (
-    <section className="main__connect">
+    <section id="connect" className="main__connect">
       <div className="inner">
         <div className="main__content">
           <div className="txt">
