@@ -1,7 +1,6 @@
 // 태그구조 엄수
 
 // todo
-// 1. header :: skip nav
 // 2. header :: 메뉴 앵커 부드럽게 처리
 // 3. Project :: 리스트 호버시 해당 프로젝트 보이도록처리
 // 4. Project :: 링크 연결
@@ -21,12 +20,13 @@
     left: 0;
     z-index: 200;
     width: 100%;
+    height: 3rem;
     overflow: hidden;
     display: block;
-    padding: 1rem;
     background-color: $color_point;
     color: $color_white;
     text-align: center;
+    line-height: 3rem;
     transition: all 0.2s ease-in-out;
     transform: translateY(-100%);
     outline: 0;
