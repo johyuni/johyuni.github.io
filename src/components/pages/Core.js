@@ -8,9 +8,8 @@ function Core() {
 
         <div className="main__content">
           <strong className="txt__tit">
-            같이의
-            <br />
-            가치를 믿습니다.
+            같은 목표를 가지면
+            <br />더 멀리 갈 수 있다고 생각합니다.
           </strong>
 
           <ul className="list">
