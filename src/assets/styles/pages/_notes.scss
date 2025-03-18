@@ -43,13 +43,18 @@
         &:hover {
           background-color: $color_bgray4;
         }
+        .ico {
+          flex-shrink: 0;
+          width: 1.6rem;
+          height: 1.6rem;
+          background-color: $color_primary;
+        }
       }
     }
 
     .txt {
       @include flex;
-      gap: 4rem;
-      width: 100%;
+      gap: 3rem;
       padding: 4rem 2.6rem;
       &__body4 {
         flex-shrink: 0;
