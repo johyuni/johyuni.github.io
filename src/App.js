@@ -17,18 +17,23 @@ import "swiper/css/effect-fade";
 function App() {
   return (
     <div className="wrap">
-      <div className="content">
-        <Header />
-        <main className="main">
-          <Visual />
-          <Profile />
-          <Project />
-          <Notes />
-          <Core />
-          <Connect />
-        </main>
-        <Footer />
+      {/* skip-nav */}
+      <div className="skip">
+        <a href="#main" className="skip__link">
+          본문 바로가기
+        </a>
       </div>
+
+      <Header />
+      <main id="main" className="main">
+        <Visual />
+        <Profile />
+        <Project />
+        <Notes />
+        <Core />
+        <Connect />
+      </main>
+      <Footer />
     </div>
   );
 }

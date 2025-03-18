@@ -12,6 +12,30 @@
 // 9. footer :: 링크연결
 // 10. 공통 :: 컬러팔레트 정리
 
+// skip-nav
+.skip {
+  &__link {
+    @include txt_body2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 1rem;
+    background-color: $color_point;
+    color: $color_white;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-100%);
+    outline: 0;
+    &:focus {
+      transform: translateY(0);
+    }
+  }
+}
+
 .main {
   background-color: $color_black;
   section:not(.main__connect) {
