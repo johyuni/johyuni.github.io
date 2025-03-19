@@ -55,7 +55,7 @@ function Notes() {
           </div>
 
           {/* list */}
-          <div className="list">
+          <ul className="list">
             {list.map((item, index) => (
               <li key={item.name} className="list__item">
                 <Link to={item.link} target="_blank" className="txt">
@@ -66,7 +66,7 @@ function Notes() {
                 </Link>
               </li>
             ))}
-          </div>
+          </ul>
 
           <Link to="" className="txt__link">
             더보기 버튼
