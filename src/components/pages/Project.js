@@ -15,26 +15,31 @@ function Project() {
 
   const list = [
     {
+      title: "디자인 시스템 구축",
       name: "[NUTS] 디자인 시스템 구축", // 이름
       dsc: "프로젝트에 대한 간략한 설명 공간입니다. 프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.",
       link: "https://gray-ground-0e112d000.4.azurestaticapps.net",
     },
     {
+      title: "T4K 전기트럭 브랜드 사이트 구축",
       name: "[GS글로벌] T4K 전기트럭 브랜드 사이트 구축 ",
       dsc: "프로젝트에 대한 간략한 설명 공간입니다. 프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.",
       link: "https://gsgev.com",
     },
     {
+      title: "보증금 처리지원금 관리시스템 및 모바일앱 고도화 유지보수",
       name: "[자원순환보증금] 보증금 처리지원금 관리시스템 및 모바일앱 고도화 유지보수",
       dsc: "프로젝트에 대한 간략한 설명 공간입니다. 프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.",
       link: "https://cupcms.cosmo.or.kr/index.vw",
     },
     {
+      title: "항공권 B2C 홈페이지 및 판매 채널 구축",
       name: "[제주항공] B2C 홈페이지 및 판매 채널 구축",
       dsc: "프로젝트에 대한 간략한 설명 공간입니다. 프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.",
       link: "https://www.jejuair.net/ko/main/base/index.do#",
     },
     {
+      title: "러그 판매 채널 구축",
       name: "[리빙뮤지엄] B2C 홈페이지 및 판매 채널 구축",
       dsc: "프로젝트에 대한 간략한 설명 공간입니다. 프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.",
       link: "https://limu.co.kr/shopinfo/company.html",
@@ -65,7 +70,7 @@ function Project() {
                 }`}
               >
                 <div className="txt">
-                  <strong className="txt__tit">{item.name}</strong>
+                  <strong className="txt__tit">{item.title}</strong>
                   <p className="txt__body3">{item.dsc}</p>
                   {/* todo :: 버벅거리는거 해결 */}
                   <div className="txt__box">

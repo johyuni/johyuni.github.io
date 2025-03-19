@@ -32,32 +32,33 @@ function Notes() {
         <strong className="main__tit">노트</strong>
 
         <div className="main__content">
-          <div className="inputbox">
-            <input
-              id="input"
-              type="text"
-              className="input"
-              placeholder="hyyyuni.log"
-              readOnly
-            />
-            <i></i>
-            <i></i>
-          </div>
-
-          <div className="tagbox">
-            <span className="hash">Design System</span>
-            <span className="hash">Clone-Coding</span>
-            <span className="hash">Code Editor</span>
-            <span className="hash">Git</span>
-            <span className="hash">BEM</span>
-            <span className="hash">localhost</span>
+          <div className="box">
+            <div className="inputbox">
+              <input
+                id="input"
+                type="text"
+                className="input"
+                placeholder="hyyyuni.log"
+                readOnly
+              />
+              <i className="ico"></i>
+              <i className="ico"></i>
+            </div>
+            <div className="tagbox">
+              <span className="hash">Design System</span>
+              <span className="hash">Clone-Coding</span>
+              <span className="hash">Code Editor</span>
+              <span className="hash">Git</span>
+              <span className="hash">BEM</span>
+              <span className="hash">localhost</span>
+            </div>
           </div>
 
           {/* list */}
-          <ul className="list">
+          <div className="list">
             {list.map((item, index) => (
               <li key={item.name} className="list__item">
-                <Link to={item.link} className="txt">
+                <Link to={item.link} target="_blank" className="txt">
                   <span className="txt__body4">({index + 1})</span>
                   <strong className="txt__body1">{item.name}</strong>
                   <span className="txt__body3">{item.dsc}</span>
@@ -65,7 +66,7 @@ function Notes() {
                 </Link>
               </li>
             ))}
-          </ul>
+          </div>
 
           <Link to="" className="txt__link">
             더보기 버튼
