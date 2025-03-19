@@ -10,23 +10,28 @@ function Project() {
     {
       link: "https://gray-ground-0e112d000.4.azurestaticapps.net",
       name: "[NUTS] 디자인 시스템 구축",
+      class: "item1",
       // 넛츠는 이미지로 대체하기
     },
     {
       link: "https://gsgev.com",
       name: "[GS글로벌] T4K 전기트럭 브랜드 사이트 구축 ",
+      class: "item2",
     },
     {
       link: "https://cupcms.cosmo.or.kr/index.vw",
       name: "[자원순환보증금] 보증금 처리지원금 관리시스템 및 모바일앱 고도화 유지보수",
+      class: "item3",
     },
     {
       link: "https://www.jejuair.net/ko/main/base/index.do#",
       name: "[제주항공] B2C 홈페이지 및 판매 채널 구축",
+      class: "item4",
     },
     {
       link: "https://limu.co.kr/shopinfo/company.html",
       name: "[리빙뮤지엄] B2C 홈페이지 및 판매 채널 구축",
+      class: "item5",
     },
   ];
   return (
@@ -103,7 +108,12 @@ function Project() {
           {/* list */}
           <div className="list">
             {list.map((item) => (
-              <Link to={item.link} target="_blank" className="list__item">
+              <Link
+                to={item.link}
+                target="_blank"
+                className={`list__item ${item.class}`}
+                key={item.name}
+              >
                 {item.name}
               </Link>
             ))}
