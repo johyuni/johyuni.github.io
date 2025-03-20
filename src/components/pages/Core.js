@@ -22,7 +22,7 @@ function Core() {
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
               </p>
               <span className="txt__body3">
-                &#35;해시태그 &#35;해시태그 &#35;해시태그
+                &#35;조화 &#35;팀워크 &#35;서로돕기
               </span>
             </li>
             <li className="list__item txt">
@@ -34,11 +34,11 @@ function Core() {
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
               </p>
               <span className="txt__body3">
-                &#35;해시태그 &#35;해시태그 &#35;해시태그
+                &#35;미래지향 &#35;효율적인 &#35;섬세한
               </span>
             </li>
             <li className="list__item txt">
-              <strong className="txt__body1">상생</strong>
+              <strong className="txt__body1">성장</strong>
               <p className="txt__body2">
                 키워드 상세내용입니다. 키워드 상세내용입니다. 키워드
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
@@ -46,7 +46,7 @@ function Core() {
                 상세내용입니다. 키워드 상세내용입니다. 키워드 상세내용입니다.
               </p>
               <span className="txt__body3">
-                &#35;해시태그 &#35;해시태그 &#35;해시태그
+                &#35;공존 &#35;윈윈&#40;win-win&#41; &#35;발전
               </span>
             </li>
           </ul>
