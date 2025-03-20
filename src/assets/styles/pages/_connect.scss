@@ -1,5 +1,5 @@
 .main__connect {
-  background-color: $color_gray6;
+  background-color: $color_white;
   padding: 11rem 0;
 
   .main__content {
@@ -8,9 +8,9 @@
     .txt {
       &__tit {
         display: block;
-        color: $color_black;
+        color: $color_gray1;
       }
-      &__body3 {
+      &__body2 {
         margin-top: 1.6rem;
         color: $color_gray3;
       }

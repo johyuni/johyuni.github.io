@@ -7,7 +7,7 @@ function Connect() {
         <div className="main__content">
           <div className="txt">
             <strong className="txt__tit">저와 함께하고 싶으신가요?</strong>
-            <p className="txt__body3">
+            <p className="txt__body2">
               배움을 멈출 줄 모르는 든든한 동료가 되겠습니다. 배움을 멈출 줄
               모르는 든든한 동료가 되겠습니다. <br /> 배움을 멈출 줄 모르는
               든든한 동료가 되겠습니다. 배움을 멈출 줄 모르는 든든한 동료가
