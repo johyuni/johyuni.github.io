@@ -7,27 +7,40 @@ function Footer() {
       <div className="inner">
         <ul className="footer__list">
           <li className="footer__item">
-            <Link to="" target="" className="link">
+            <Link
+              to="https://github.com/johyuni"
+              target="_blank"
+              className="link"
+            >
               GitHub
             </Link>
           </li>
           <li className="footer__item">
-            <Link to="" target="" className="link">
-              Notion
+            <Link
+              to="https://velog.io/@hyyyuni/posts"
+              target="_blank"
+              className="link"
+            >
+              Velog
             </Link>
           </li>
           <li className="footer__item">
-            <Link to="" target="" className="link">
+            <a href="mailto:2252hyun@gmail.com" className="link">
               Mail
-            </Link>
+            </a>
+            {/*  todo :: 메일은 다시 테스트 필요함 */}
           </li>
           <li className="footer__item">
-            <Link to="" target="" className="link">
+            <Link to="tel:01040682252" className="link">
               Phone
             </Link>
           </li>
           <li className="footer__item">
-            <Link to="" target="" className="link">
+            <Link
+              to="https://www.instagram.com/iiuoahy?igsh=bmt5MTk1eDB0emho&utm_source=qr"
+              target="_blank"
+              className="link"
+            >
               Instagram
             </Link>
           </li>
