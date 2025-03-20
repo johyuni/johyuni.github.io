@@ -46,7 +46,7 @@
         transition: all 0.3s ease-in-out;
         background-color: $color_white;
         &:hover {
-          background-color: $color_bgray4;
+          background-color: $color_secondary;
         }
         .ico {
           flex-shrink: 0;
@@ -69,17 +69,17 @@
         flex-shrink: 0;
         display: block;
         width: 13rem;
-        color: $color_bgray1;
+        color: $color_gray3;
       }
       &__body3 {
         @include ellipse;
-        color: $color_bgray2;
+        color: $color_gray4;
       }
       &__link {
         text-align: center;
-        color: $color_bgray2;
+        color: $color_gray4;
         &:hover {
-          color: $color_bgray1;
+          color: $color_gray3;
         }
       }
     }
