@@ -9,18 +9,19 @@
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
+      gap: 2rem;
       width: 37rem;
       height: 100%;
       &__link {
-        margin-top: 2rem;
-        color: $color_gray4;
+        color: $color_gray5;
         &:hover {
-          color: $color_gray3;
+          color: $color_gray4;
         }
       }
       &__body3 {
         margin-top: auto;
-        color: $color_gray4;
+        color: $color_gray5;
+        font-weight: 400;
       }
     }
 
@@ -64,7 +65,7 @@
       span:not(.tag),
       dt,
       dd {
-        color: $color_gray5;
+        color: $color_gray6;
         margin-top: 0.8rem;
       }
       span {

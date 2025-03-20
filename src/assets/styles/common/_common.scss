@@ -100,9 +100,9 @@ html {
     height: 100%;
     padding: 0.2rem 0.6rem;
     border-radius: 0.4rem;
-    background-color: $color_gray2;
+    background-color: $color_gray3;
     font-family: Consolas;
-    color: $color_gray5;
+    color: $color_gray6;
   }
   .hash {
     margin: 0;
@@ -111,8 +111,8 @@ html {
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 2rem;
-    background-color: $color_secondary;
-    color: $color_gray4;
+    background-color: $color_gray3;
+    color: $color_gray2;
   }
 }
 
@@ -121,7 +121,7 @@ html {
   width: 22rem;
   border: 1px solid $color_gray3;
   background-color: $color_gray1;
-  color: #569cd6;
+  color: #569cd6; //예외 컬러
   font-size: 1.4rem;
   font-family: Consolas;
   padding: 0.6rem 1rem;
