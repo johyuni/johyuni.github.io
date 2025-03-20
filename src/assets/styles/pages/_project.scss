@@ -23,9 +23,9 @@
       &__tit {
         color: $color_white;
       }
-      &__body3 {
+      &__body2 {
         margin-top: 1.6rem;
-        color: $color_gray6;
+        color: $color_gray5;
       }
       &__box {
         position: absolute;
@@ -41,7 +41,7 @@
             vertical-align: middle;
             margin: 0 1rem;
             width: 2.5rem;
-            height: 0.2rem;
+            height: 0.1rem;
             background-color: $color_gray4;
           }
         }
@@ -76,6 +76,7 @@
         word-break: keep-all;
         color: $color_gray6;
         background-color: $color_black;
+        border-radius: 0.2rem;
         transition: all 0.2s ease-in-out;
         &:hover {
           background-color: $color_gray1;

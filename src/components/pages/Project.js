@@ -71,7 +71,7 @@ function Project() {
               >
                 <div className="txt">
                   <strong className="txt__tit">{item.title}</strong>
-                  <p className="txt__body3">{item.dsc}</p>
+                  <p className="txt__body2">{item.dsc}</p>
                   {/* todo :: 버벅거리는거 해결 */}
                   <div className="txt__box">
                     <span className="txt__body3">{index + 1}</span>
