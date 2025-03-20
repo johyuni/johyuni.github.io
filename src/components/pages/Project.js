@@ -13,7 +13,7 @@ function Project() {
   const list = [
     {
       title: "디자인 시스템 구축",
-      name: "[NUTS] 디자인 시스템 구축", // 이름
+      name: "[NUTS] 디자인 시스템 구축",
       dsc: "프로젝트에 대한 간략한 설명 공간입니다. 프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.프로젝트에 대한 간략한 설명 공간입니다.",
       link: "https://gray-ground-0e112d000.4.azurestaticapps.net",
     },
@@ -55,6 +55,7 @@ function Project() {
               delay: 5000,
               disableOnInteraction: false,
             }}
+            loop={true}
             modules={[Autoplay, EffectFade]}
             className="mySwiper"
           >
@@ -63,7 +64,6 @@ function Project() {
                 <div className="txt">
                   <strong className="txt__tit">{item.title}</strong>
                   <p className="txt__body2">{item.dsc}</p>
-                  {/* todo :: 버벅거리는거 해결 */}
                   <div className="txt__box">
                     <span className="txt__body3">{index + 1}</span>
                     <span className="txt__body3">5</span>
