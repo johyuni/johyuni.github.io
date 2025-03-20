@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 // Swiper import
@@ -10,9 +10,6 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 function Project() {
-  // 현재 활성화된 슬라이드 인덱스(순서)
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const list = [
     {
       title: "디자인 시스템 구축",
@@ -60,15 +57,9 @@ function Project() {
             }}
             modules={[Autoplay, EffectFade]}
             className="mySwiper"
-            activeIndex={activeIndex}
           >
             {list.map((item, index) => (
-              <SwiperSlide
-                key={index}
-                className={`swiper-slide ${
-                  activeIndex === index ? "active" : ""
-                }`}
-              >
+              <SwiperSlide key={index} className="swiper-slide">
                 <div className="txt">
                   <strong className="txt__tit">{item.title}</strong>
                   <p className="txt__body2">{item.dsc}</p>
@@ -98,7 +89,6 @@ function Project() {
                 target="_blank"
                 className="list__item"
                 key={item.name}
-                onMouseEnter={() => setActiveIndex(index)}
               >
                 {item.name}
               </Link>
