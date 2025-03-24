@@ -50,14 +50,6 @@ html {
   &__content {
     height: 100%;
   }
-
-  // media
-  @media screen and (max-width: 1024px) {
-    section:not(.main__visual) {
-      height: 100%;
-      padding: 8rem 0;
-    }
-  }
 }
 
 // text

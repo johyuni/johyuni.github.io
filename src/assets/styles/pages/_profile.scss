@@ -54,7 +54,7 @@
           content: "<";
         }
         &::after {
-          content: ">";
+          content: "/>";
         }
         &::before,
         &::after {
@@ -96,49 +96,6 @@
         }
         .tag:last-of-type:hover ~ .tooltip {
           opacity: 1;
-        }
-      }
-    }
-  }
-
-  // media
-  @media screen and (max-width: 1024px) {
-    .main__content {
-      flex-wrap: wrap;
-      height: 100%;
-      gap: 5rem 0;
-      .txt {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        gap: 4rem;
-        padding-bottom: 5rem;
-        border-bottom: 1px solid $color_gray2;
-        &__header {
-          width: 30rem;
-          flex-shrink: 0;
-        }
-        &__link {
-          margin-top: 0.6rem;
-        }
-        &__body3 {
-          margin-top: 0;
-        }
-      }
-      .grid {
-        border: 0;
-        padding-left: 0;
-        gap: 2rem 0;
-        grid-template-columns: 1fr;
-        &__item {
-          padding: 0.8rem;
-        }
-        dd br {
-          display: none;
-        }
-        dd {
-          text-align: right;
-          word-break: keep-all;
         }
       }
     }
