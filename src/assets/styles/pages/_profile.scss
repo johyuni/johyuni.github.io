@@ -54,7 +54,7 @@
           content: "<";
         }
         &::after {
-          content: "/>";
+          content: ">";
         }
         &::before,
         &::after {
@@ -87,6 +87,7 @@
         padding-left: 0.8rem;
         vertical-align: top;
         line-height: 150%;
+        word-break: keep-all;
       }
 
       // tag
@@ -96,6 +97,30 @@
         }
         .tag:last-of-type:hover ~ .tooltip {
           opacity: 1;
+        }
+      }
+    }
+  }
+
+  // media
+  @media screen and (max-width: 1400px) {
+    .main__content {
+      gap: 0 2rem;
+      align-items: flex-start;
+      .txt {
+        width: 30rem;
+      }
+      .grid {
+        padding-left: 4rem;
+        gap: 1rem 4rem;
+        &__item {
+          padding: 0;
+        }
+        dt {
+          width: 9rem;
+        }
+        dd {
+          width: calc(100% - 9.8rem);
         }
       }
     }

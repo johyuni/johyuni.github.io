@@ -33,6 +33,16 @@ function Profile() {
             </div>
 
             <div className="grid__item">
+              <strong className="grid__tit">Certificate</strong>
+              <dl>
+                <dt>2022. 04</dt>
+                <dd>웹디자인 기능사</dd>
+                <dt>2018. 01</dt>
+                <dd>GTQ 1급</dd>
+              </dl>
+            </div>
+
+            <div className="grid__item">
               <strong className="grid__tit">Education</strong>
               <dl>
                 <dt>2022</dt>
@@ -44,24 +54,6 @@ function Profile() {
                 <dd>한국 폴리텍Ⅱ대학 인천캠퍼스 졸업</dd>
                 <dt>2013</dt>
                 <dd>경인여자고등학교 졸업</dd>
-              </dl>
-            </div>
-
-            <div className="grid__item">
-              <strong className="grid__tit">Experience</strong>
-              <dl>
-                <dt>2023. 11 &#126; 2024. 09</dt>
-                <dd>주식회사 버치홀딩스 퍼블리셔</dd>
-                <dt>2022. 05 &#126; 2023. 05</dt>
-                <dd>주식회사 인스플래닛 퍼블리셔</dd>
-                <dt>2021. 02 &#126; 2021. 08</dt>
-                <dd>
-                  제주항공 B2C 홈페이지 리뉴얼
-                  <br />
-                  프리랜서 디자이너
-                </dd>
-                <dt>2018. 04 &#126; 2020. 09</dt>
-                <dd>주식회사 위아트 디자이너</dd>
               </dl>
             </div>
 
@@ -84,12 +76,20 @@ function Profile() {
             </div>
 
             <div className="grid__item">
-              <strong className="grid__tit">Certificate</strong>
+              <strong className="grid__tit">Experience</strong>
               <dl>
-                <dt>2022. 04</dt>
-                <dd>웹디자인 기능사</dd>
-                <dt>2018. 01</dt>
-                <dd>GTQ 1급</dd>
+                <dt>2023. 11 &#126; 2024. 09</dt>
+                <dd>주식회사 버치홀딩스 퍼블리셔</dd>
+                <dt>2022. 05 &#126; 2023. 05</dt>
+                <dd>주식회사 인스플래닛 퍼블리셔</dd>
+                <dt>2021. 02 &#126; 2021. 08</dt>
+                <dd>
+                  제주항공 B2C 홈페이지 리뉴얼
+                  <br />
+                  프리랜서 디자이너
+                </dd>
+                <dt>2018. 04 &#126; 2020. 09</dt>
+                <dd>주식회사 위아트 디자이너</dd>
               </dl>
             </div>
           </div>
