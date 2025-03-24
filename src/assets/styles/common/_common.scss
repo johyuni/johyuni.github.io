@@ -1,16 +1,5 @@
 // 태그구조 엄수
 
-// todo
-// 2. header :: 메뉴 앵커 부드럽게 처리
-// 3. Project :: 리스트 호버시 해당 프로젝트 보이도록처리
-// 4. Project :: 링크 연결
-// 5. Project :: 리스트 map으로 돌리기
-// 6. note :: 링크 연결
-// 7. note :: 세로 스크롤처리
-// 8. note :: 리스트 자동 넘버링
-// 9. footer :: 링크연결
-// 10. 공통 :: 컬러팔레트 정리
-
 // html
 html {
   scroll-behavior: smooth;
@@ -53,13 +42,21 @@ html {
     max-width: 140rem;
     height: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 4rem;
   }
   &__tit {
     @include txt_header;
   }
   &__content {
     height: 100%;
+  }
+
+  // media
+  @media screen and (max-width: 1024px) {
+    section:not(.main__visual) {
+      height: 100%;
+      padding: 8rem 0;
+    }
   }
 }
 
