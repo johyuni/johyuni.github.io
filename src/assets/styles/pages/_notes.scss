@@ -84,4 +84,13 @@
       }
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .main__content {
+      gap: 4rem;
+      .list {
+        height: 43rem;
+      }
+    }
+  }
 }

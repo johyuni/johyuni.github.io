@@ -47,6 +47,7 @@ function Project() {
       <div className="inner">
         <strong className="main__tit">프로젝트</strong>
 
+        {/* PC/MO 태그구조가 달라서 새로짜야함*/}
         <div className="main__content">
           <Swiper
             effect={"fade"}
