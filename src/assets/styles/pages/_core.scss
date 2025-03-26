@@ -26,23 +26,30 @@
         color: $color_primary;
       }
     }
-
     .list {
       display: flex;
       gap: 0 4rem;
-      margin-top: 3rem;
     }
   }
 
   @media screen and (max-width: 1024px) {
     .main__content {
+      gap: 6rem;
       .list {
         flex-direction: column;
         gap: 4rem;
-        margin-top: 6rem;
       }
       .txt__body3 {
         padding-top: 0.8rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .main__content {
+      .txt__body2 {
+        padding-top: 1rem;
+        font-weight: 400;
       }
     }
   }

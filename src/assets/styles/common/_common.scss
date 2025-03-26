@@ -78,6 +78,9 @@ html {
     .ta-view {
       display: block;
     }
+    .inner {
+      padding: 0 2rem;
+    }
   }
 }
 
@@ -106,6 +109,35 @@ html {
   }
   &__body4 {
     @include txt_body4;
+  }
+}
+
+// 모바일 폰트 조정
+@media screen and (max-width: 768px) {
+  .txt {
+    &__header {
+      @include txt_header;
+    }
+    &__tit {
+      @include txt_body1; // 고침
+    }
+    &__body1 {
+      @include txt_body2; // 고침
+    }
+    &__body2 {
+      @include txt_body3; // 고침
+    }
+    &__body3 {
+      @include txt_body3;
+    }
+    &__link {
+      @include txt_body3;
+      display: block;
+      transition: all 0.2s ease-in-out;
+    }
+    &__body4 {
+      @include txt_body4;
+    }
   }
 }
 

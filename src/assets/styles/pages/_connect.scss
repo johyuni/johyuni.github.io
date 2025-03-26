@@ -32,12 +32,19 @@
   @media screen and (max-width: 1024px) {
     .main__content {
       gap: 4rem;
-      .txt {
-        &__body2 {
-          br {
-            display: none;
-          }
-        }
+      .txt__body2 br {
+        display: none;
+      }
+    }
+  }
+
+  // media mo
+  @media screen and (max-width: 768px) {
+    .main__content {
+      flex-direction: column;
+      .imgbox {
+        width: 16rem;
+        height: 16rem;
       }
     }
   }
