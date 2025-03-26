@@ -50,6 +50,32 @@ html {
   &__content {
     height: 100%;
   }
+
+  // media 공통제어
+  @media screen and (max-width: 1920px) {
+    .ta-view {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .ta-view {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .ta-view {
+      display: block;
+    }
+    section:not(.main__visual) {
+      height: 100%;
+      padding: 8rem 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .ta-view {
+      display: block;
+    }
+  }
 }
 
 // text
@@ -115,32 +141,4 @@ html {
   font-family: Consolas;
   padding: 0.6rem 1rem;
   transition: all 0.4s ease-in-out;
-}
-
-// media 공통제어
-@media screen and (max-width: 1920px) {
-  .ta-view {
-    display: none;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .ta-view {
-    display: none;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .ta-view {
-    display: block;
-  }
-  .header .gnb__nav.pc-view {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .ta-view {
-    display: block;
-  }
-  .header .gnb__nav.pc-view {
-    display: none;
-  }
 }
