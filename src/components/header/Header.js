@@ -38,7 +38,7 @@ function Header() {
         </a>
 
         {/* nav */}
-        <nav className="gnb__nav">
+        <nav className="gnb__nav pc-view">
           {["profile", "project", "notes", "core", "connect"].map((item) => (
             <a key={item} href={`#${item}`} className="link" aria-label={item}>
               {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -49,7 +49,7 @@ function Header() {
         <button
           type="button"
           aria-label="메뉴 열기"
-          className="gnb__btn"
+          className="gnb__btn ta-view"
           onClick={toggleMenu}
         ></button>
       </div>

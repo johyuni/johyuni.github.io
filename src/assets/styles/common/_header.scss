@@ -143,4 +143,11 @@
       }
     }
   }
+
+  // media
+  @media screen and (max-width: 1024px) {
+    .gnb {
+      justify-content: space-between;
+    }
+  }
 }
