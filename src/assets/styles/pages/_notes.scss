@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: space-between;
     .box {
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
     .inputbox {
       .input {
@@ -90,6 +90,32 @@
       gap: 4rem;
       .list {
         height: 43rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .main__content {
+      .list {
+        height: 28rem;
+      }
+      .txt {
+        position: relative;
+        padding: 2rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+        &__body1 {
+          width: calc(100% - 3rem);
+        }
+        &__body3 {
+          width: calc(100% - 2.6rem);
+        }
+        .ico {
+          position: absolute;
+          right: 2rem;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
       }
     }
   }

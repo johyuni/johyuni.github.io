@@ -78,6 +78,9 @@ html {
     .ta-view {
       display: block;
     }
+    section:not(.main__visual) {
+      padding: 6rem 0;
+    }
     .inner {
       padding: 0 2rem;
     }
