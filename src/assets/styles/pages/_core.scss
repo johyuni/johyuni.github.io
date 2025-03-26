@@ -33,4 +33,17 @@
       margin-top: 3rem;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .main__content {
+      .list {
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 6rem;
+      }
+      .txt__body3 {
+        padding-top: 0.8rem;
+      }
+    }
+  }
 }

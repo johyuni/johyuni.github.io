@@ -5,7 +5,7 @@
     max-width: 140rem;
     height: 100%;
     margin: 0 auto;
-    padding: 1.6rem 0;
+    padding: 1.6rem 4rem;
   }
   &__list {
     @include flex;
@@ -54,5 +54,30 @@
     margin-top: 0.4rem;
     @include txt_body4;
     color: $color_gray2;
+  }
+
+  // media
+  @media screen and (max-width: 768px) {
+    .inner {
+      padding: 1.6rem 2rem;
+    }
+    &__list {
+      gap: 0.6rem;
+    }
+    &__item {
+      &:first-child .link::before {
+        right: -0.1rem;
+        top: -0.4rem;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+    .link {
+      @include txt_body4;
+      font-weight: 600;
+      &::after {
+        margin-left: 0.6rem;
+      }
+    }
   }
 }

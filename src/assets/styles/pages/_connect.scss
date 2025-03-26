@@ -17,6 +17,7 @@
     }
 
     .imgbox {
+      flex-shrink: 0;
       width: 20rem;
       height: 20rem;
       background-color: $color_primary;
@@ -25,6 +26,19 @@
       display: block;
       width: 100%;
       height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .main__content {
+      gap: 4rem;
+      .txt {
+        &__body2 {
+          br {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
