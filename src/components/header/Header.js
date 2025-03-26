@@ -1,7 +1,32 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
+  // 모바일 메뉴 데이터
+  const menu = [
+    { id: "profile", name: "프로필" },
+    { id: "project", name: "프로젝트" },
+    { id: "notes", name: "노트" },
+    { id: "core", name: "핵심역량" },
+    { id: "connect", name: "연결" },
+  ];
+
+  // 모바일 푸터메뉴 데이터
+  // 메일/전화연결 메뉴 추가해보기 (작동안함)
+  const menuFooter = [
+    { id: "GitHub", name: "GitHub", link: "https://github.com/johyuni" },
+    { id: "Velog", name: "Velog", link: "https://velog.io/@hyyyuni/posts" },
+    {
+      id: "Instagram",
+      name: "Instagram",
+      link: "https://www.instagram.com/iiuoahy?igsh=bmt5MTk1eDB0emho&utm_source=qr",
+    },
+  ];
+
   return (
     <header className="header">
       {/* gnb*/}
@@ -14,39 +39,23 @@ function Header() {
 
         {/* nav */}
         <nav className="gnb__nav">
-          <a href="#profile" role="button" className="link" aria-label="프로필">
-            Profile
-          </a>
-          <a
-            href="#project"
-            role="button"
-            className="link"
-            aria-label="프로젝트"
-          >
-            Project
-          </a>
-          <a href="#notes" role="button" className="link" aria-label="노트">
-            Notes
-          </a>
-          <a href="#core" role="button" className="link" aria-label="핵심">
-            Core
-          </a>
-          <a href="#connect" role="button" className="link" aria-label="연결">
-            Connect
-          </a>
+          {["profile", "project", "notes", "core", "connect"].map((item) => (
+            <a key={item} href={`#${item}`} className="link" aria-label={item}>
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </a>
+          ))}
         </nav>
 
-        {/* 이 아이는 태블릿에서부터 노출 */}
         <button
           type="button"
           aria-label="메뉴 열기"
           className="gnb__btn"
+          onClick={toggleMenu}
         ></button>
       </div>
 
       {/* gnb--mobile*/}
-      {/* 태블릿부터 풀메뉴노출 */}
-      <div className="gnb gnb--full">
+      <div className={`gnb gnb--full ${isMenuOpen ? "show" : ""}`}>
         <div className="gnb--full__header">
           <a href="/" role="button" aria-label="상위로 이동">
             <h1 className="gnb__logo">
@@ -55,89 +64,31 @@ function Header() {
           </a>
           <button
             type="button"
-            aria-label="메뉴 열기"
+            aria-label="메뉴 닫기"
             className="gnb__btn"
+            onClick={closeMenu}
           ></button>
         </div>
 
         <ul className="gnb--full__menu">
-          <li className="gnb--full__depth">
-            <a
-              href="#profile"
-              role="button"
-              className="link"
-              aria-label="프로필"
-            >
-              프로필
-            </a>
-          </li>
-          <li className="gnb--full__depth">
-            <a
-              href="#project"
-              role="button"
-              className="link"
-              aria-label="프로젝트"
-            >
-              프로젝트
-            </a>
-          </li>
-          <li className="gnb--full__depth">
-            <a href="#notes" role="button" className="link" aria-label="노트">
-              노트
-            </a>
-          </li>
-          <li className="gnb--full__depth">
-            <a href="#core" role="button" className="link" aria-label="핵심">
-              핵심역량
-            </a>
-          </li>
-          <li className="gnb--full__depth">
-            <a href="#connect" role="button" className="link" aria-label="연결">
-              연결
-            </a>
-          </li>
+          {menu.map((item) => (
+            <li key={item.id} className="gnb--full__depth">
+              <a href={`#${item.id}`} className="link" onClick={closeMenu}>
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <div className="gnb--full__footer">
           <ul className="gnb--full__list">
-            <li className="gnb--full__item">
-              <Link
-                to="https://github.com/johyuni"
-                target="_blank"
-                className="link"
-              >
-                GitHub
-              </Link>
-            </li>
-            <li className="gnb--full__item">
-              <Link
-                to="https://velog.io/@hyyyuni/posts"
-                target="_blank"
-                className="link"
-              >
-                Velog
-              </Link>
-            </li>
-            <li className="gnb--full__item">
-              <a href="mailto:2252hyun@gmail.com" className="link">
-                Mail
-              </a>
-              {/*  todo :: 메일은 다시 테스트 필요함 */}
-            </li>
-            <li className="gnb--full__item">
-              <Link to="tel:01040682252" className="link">
-                Phone
-              </Link>
-            </li>
-            <li className="gnb--full__item">
-              <Link
-                to="https://www.instagram.com/iiuoahy?igsh=bmt5MTk1eDB0emho&utm_source=qr"
-                target="_blank"
-                className="link"
-              >
-                Instagram
-              </Link>
-            </li>
+            {menuFooter.map((item) => (
+              <li key={item.id} className="gnb--full__item">
+                <Link to={item.link} target="_blank" className="link">
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
           <span className="gnb--full__copy">
             &copy;hyyyuni. All rights reserved.
