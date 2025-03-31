@@ -85,6 +85,7 @@
     }
   }
 
+  // media::tablet
   @media screen and (max-width: 1024px) {
     .main__content {
       gap: 4rem;
@@ -94,6 +95,7 @@
     }
   }
 
+  // media::mobile
   @media screen and (max-width: 768px) {
     .main__content {
       .list {

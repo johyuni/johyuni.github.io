@@ -1,5 +1,3 @@
-// 태그구조 엄수
-
 // html
 html {
   scroll-behavior: smooth;
@@ -51,24 +49,41 @@ html {
     height: 100%;
   }
 
-  // media 공통
-  // 확인후 안쓰는 소스 삭제
+  // media
+  // media::pc
   @media screen and (max-width: 1920px) {
   }
+
+  // media::low pc
   @media screen and (max-width: 1400px) {
   }
+
+  // media::tablet
   @media screen and (max-width: 1024px) {
     section:not(.main__visual) {
       height: 100%;
       padding: 8rem 0;
     }
   }
+
+  // media::mobile
   @media screen and (max-width: 768px) {
     section:not(.main__visual) {
       padding: 6rem 0;
     }
     .inner {
       padding: 0 2rem;
+    }
+    .txt {
+      &__tit {
+        @include txt_body1; // 고침
+      }
+      &__body1 {
+        @include txt_body2; // 고침
+      }
+      &__body2 {
+        @include txt_body3; // 고침
+      }
     }
   }
 }
@@ -98,21 +113,6 @@ html {
   }
   &__body4 {
     @include txt_body4;
-  }
-}
-
-// 모바일 폰트 조정
-@media screen and (max-width: 768px) {
-  .txt {
-    &__tit {
-      @include txt_body1; // 고침
-    }
-    &__body1 {
-      @include txt_body2; // 고침
-    }
-    &__body2 {
-      @include txt_body3; // 고침
-    }
   }
 }
 

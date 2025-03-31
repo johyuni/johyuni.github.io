@@ -85,7 +85,7 @@
       }
     }
 
-    // media
+    // media::low pc
     @media screen and (max-width: 1400px) {
       .list {
         display: none;
@@ -95,6 +95,7 @@
       }
     }
 
+    // media::tablet
     @media screen and (max-width: 1024px) {
       margin-top: 4rem;
       .swiper .swiper-slide {

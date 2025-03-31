@@ -32,6 +32,7 @@
     }
   }
 
+  // media::tablet
   @media screen and (max-width: 1024px) {
     .main__content {
       gap: 6rem;
@@ -45,12 +46,11 @@
     }
   }
 
+  // media::mobile
   @media screen and (max-width: 768px) {
-    .main__content {
-      .txt__body2 {
-        padding-top: 1rem;
-        font-weight: 400;
-      }
+    .main__content .txt__body2 {
+      padding-top: 1rem;
+      font-weight: 400;
     }
   }
 }
