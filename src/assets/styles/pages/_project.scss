@@ -134,5 +134,15 @@
         display: none;
       }
     }
+
+    // media::mobile
+    @media screen and (max-width: 768px) {
+      .txt {
+        height: 14rem;
+      }
+      .swiper .swiper-pagination {
+        margin-top: 3rem;
+      }
+    }
   }
 }
