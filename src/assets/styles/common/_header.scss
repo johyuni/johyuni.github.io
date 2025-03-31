@@ -43,6 +43,7 @@
     }
 
     &__btn {
+      display: none;
       flex-shrink: 0;
       width: 4.4rem;
       height: 4.4rem;
@@ -145,13 +146,15 @@
   }
 
   // media
-
   @media screen and (max-width: 1024px) {
     .gnb {
       justify-content: space-between;
-    }
-    .gnb__nav.pc-view {
-      display: none;
+      &__nav {
+        display: none;
+      }
+      &__btn {
+        display: block;
+      }
     }
   }
 }
