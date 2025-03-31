@@ -46,8 +46,6 @@ function Project() {
     <section id="project" className="main__project">
       <div className="inner">
         <strong className="main__tit">프로젝트</strong>
-
-        {/* PC/MO 태그구조가 달라서 새로짜야함*/}
         <div className="main__content">
           <Swiper
             effect={"fade"}
@@ -62,6 +60,13 @@ function Project() {
           >
             {list.map((item, index) => (
               <SwiperSlide key={index} className="swiper-slide">
+                <div className="imgbox">
+                  <img
+                    className="img"
+                    src=""
+                    alt={`프로젝트 대표 이미지 ${index + 1}`}
+                  />
+                </div>
                 <div className="txt">
                   <strong className="txt__tit">{item.title}</strong>
                   <p className="txt__body2">{item.dsc}</p>
@@ -69,14 +74,6 @@ function Project() {
                     <span className="txt__body3">{index + 1}</span>
                     <span className="txt__body3">5</span>
                   </div>
-                </div>
-                {/* img 최상단에 임폴트 시키고 각자 다른이미지 돌아가도록 */}
-                <div className="imgbox">
-                  <img
-                    className="img"
-                    src=""
-                    alt={`프로젝트 대표 이미지 ${index + 1}`}
-                  />
                 </div>
               </SwiperSlide>
             ))}

@@ -52,6 +52,7 @@ html {
   }
 
   // media 공통제어
+  // 확인후 안쓰는 소스 삭제
   @media screen and (max-width: 1920px) {
     .ta-view {
       display: none;
@@ -118,9 +119,6 @@ html {
 // 모바일 폰트 조정
 @media screen and (max-width: 768px) {
   .txt {
-    &__header {
-      @include txt_header;
-    }
     &__tit {
       @include txt_body1; // 고침
     }
@@ -129,17 +127,6 @@ html {
     }
     &__body2 {
       @include txt_body3; // 고침
-    }
-    &__body3 {
-      @include txt_body3;
-    }
-    &__link {
-      @include txt_body3;
-      display: block;
-      transition: all 0.2s ease-in-out;
-    }
-    &__body4 {
-      @include txt_body4;
     }
   }
 }
