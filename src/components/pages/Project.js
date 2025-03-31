@@ -2,11 +2,12 @@ import React from "react";
 
 // Swiper import
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
 // Swiper style
 import "swiper/css";
 import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 
 function Project() {
   const list = [
@@ -54,8 +55,11 @@ function Project() {
               disableOnInteraction: false,
             }}
             loop={true}
-            modules={[Autoplay, EffectFade]}
+            modules={[Autoplay, EffectFade, Pagination]}
             className="mySwiper"
+            pagination={{
+              clickable: true,
+            }}
           >
             {list.map((item, index) => (
               <SwiperSlide key={index} className="swiper-slide">
