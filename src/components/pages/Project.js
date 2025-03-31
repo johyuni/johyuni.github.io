@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Swiper import
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -61,15 +60,20 @@ function Project() {
             {list.map((item, index) => (
               <SwiperSlide key={index} className="swiper-slide">
                 <div className="imgbox">
-                  <img
-                    className="img"
-                    src=""
-                    alt={`프로젝트 대표 이미지 ${index + 1}`}
-                  />
+                  <a target="blank" href={item.link}>
+                    <img
+                      className="img"
+                      src={""}
+                      alt={`프로젝트 대표 이미지 ${index + 1}`}
+                    />
+                  </a>
                 </div>
+
                 <div className="txt">
-                  <strong className="txt__tit">{item.title}</strong>
-                  <p className="txt__body2">{item.dsc}</p>
+                  <a target="blank" href={item.link}>
+                    <strong className="txt__tit">{item.title}</strong>
+                    <span className="txt__body2">{item.dsc}</span>
+                  </a>
                   <div className="txt__box">
                     <span className="txt__body3">{index + 1}</span>
                     <span className="txt__body3">5</span>
@@ -81,15 +85,15 @@ function Project() {
 
           {/* list */}
           <div className="list">
-            {list.map((item, index) => (
-              <Link
-                to={item.link}
-                target="_blank"
-                className="list__item"
+            {list.map((item) => (
+              <a
                 key={item.name}
+                target="blank"
+                href={item.link}
+                className="list__item"
               >
                 {item.name}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Notes() {
   // list 배열 생성
@@ -62,19 +61,23 @@ function Notes() {
           <ul className="list">
             {list.map((item, index) => (
               <li key={item.name} className="list__item">
-                <Link to={item.link} target="_blank" className="txt">
+                <a href={item.link} target="blank" className="txt">
                   <span className="txt__body4">({index + 1})</span>
                   <strong className="txt__body1">{item.name}</strong>
                   <span className="txt__body3">{item.dsc}</span>
                   <i className="ico"></i>
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
 
-          <Link to="https://velog.io/@hyyyuni/posts" className="txt__link">
+          <a
+            href="https://velog.io/@hyyyuni/posts"
+            target="blank"
+            className="txt__link"
+          >
             더보기 버튼
-          </Link>
+          </a>
           {/* 아래쪽 화살표로 대체할것  */}
         </div>
       </div>

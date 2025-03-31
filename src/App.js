@@ -1,4 +1,6 @@
 import React from "react";
+// import { Link } from "react-router-dom";
+// Link 태그를 사용하려면 위 소스를 import 해야함
 
 // component
 import Header from "./components/header/Header";

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,6 +37,7 @@ function Header() {
         </a>
 
         {/* nav */}
+        {/* Link태그여야 하지만 앵커포인트 설정을 위해 a태그로 작업 */}
         <nav className="gnb__nav">
           {["profile", "project", "notes", "core", "connect"].map((item) => (
             <a key={item} href={`#${item}`} className="link" aria-label={item}>
@@ -84,9 +84,9 @@ function Header() {
           <ul className="gnb--full__list">
             {menuFooter.map((item) => (
               <li key={item.id} className="gnb--full__item">
-                <Link to={item.link} target="_blank" className="link">
+                <a href={item.link} target="blank" className="link">
                   {item.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

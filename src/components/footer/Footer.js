@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -7,22 +6,22 @@ function Footer() {
       <div className="inner">
         <ul className="footer__list">
           <li className="footer__item">
-            <Link
-              to="https://github.com/johyuni"
-              target="_blank"
+            <a
+              href="https://github.com/johyuni"
+              target="blank"
               className="link"
             >
               GitHub
-            </Link>
+            </a>
           </li>
           <li className="footer__item">
-            <Link
-              to="https://velog.io/@hyyyuni/posts"
-              target="_blank"
+            <a
+              href="https://velog.io/@hyyyuni/posts"
+              target="blank"
               className="link"
             >
               Velog
-            </Link>
+            </a>
           </li>
           <li className="footer__item">
             <a href="mailto:2252hyun@gmail.com" className="link">
@@ -31,18 +30,18 @@ function Footer() {
             {/*  todo :: 메일은 다시 테스트 필요함 */}
           </li>
           <li className="footer__item">
-            <Link to="tel:01040682252" className="link">
+            <a href="tel:01040682252" className="link">
               Phone
-            </Link>
+            </a>
           </li>
           <li className="footer__item">
-            <Link
-              to="https://www.instagram.com/iiuoahy?igsh=bmt5MTk1eDB0emho&utm_source=qr"
-              target="_blank"
+            <a
+              href="https://www.instagram.com/iiuoahy?igsh=bmt5MTk1eDB0emho&utm_source=qr"
+              target="blank"
               className="link"
             >
               Instagram
-            </Link>
+            </a>
           </li>
         </ul>
         <span className="footer__copy">

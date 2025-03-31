@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Profile() {
   return (
@@ -12,9 +11,9 @@ function Profile() {
               밝은 에너지와 경청하는 자세로
               <br />
               꾸준히 성장하는 조현희입니다.
-              <Link to="" className="txt__link">
+              <a href="/" target="blank" className="txt__link">
                 소개 더보기
-              </Link>
+              </a>
             </strong>
             <p className="txt__body3">
               간단한 소개글 영역입니다 간단한 소개글 영역입니다 간단한 소개글

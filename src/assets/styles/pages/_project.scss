@@ -21,10 +21,14 @@
 
     // txt
     .txt {
+      a {
+        display: block;
+      }
       &__tit {
         color: $color_white;
       }
       &__body2 {
+        display: block;
         margin-top: 1.6rem;
         color: $color_gray5;
       }
