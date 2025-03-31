@@ -51,34 +51,19 @@ html {
     height: 100%;
   }
 
-  // media 공통제어
+  // media 공통
   // 확인후 안쓰는 소스 삭제
   @media screen and (max-width: 1920px) {
-    .ta-view {
-      display: none;
-    }
   }
-
   @media screen and (max-width: 1400px) {
-    .ta-view {
-      display: none;
-    }
   }
-
   @media screen and (max-width: 1024px) {
-    .ta-view {
-      display: block;
-    }
     section:not(.main__visual) {
       height: 100%;
       padding: 8rem 0;
     }
   }
-
   @media screen and (max-width: 768px) {
-    .ta-view {
-      display: block;
-    }
     section:not(.main__visual) {
       padding: 6rem 0;
     }
