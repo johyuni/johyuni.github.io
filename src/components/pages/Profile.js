@@ -67,9 +67,11 @@ function Profile() {
                 <span className="tag">JavaScript</span>
                 <span className="tag">React</span>
                 <span className="tag">Figma</span>
-                <span className="tag">...</span>
                 <div className="tooltip">
-                  Zeplin , Adobe XD, Adobe Photoshop, Adobe Illustrator
+                  <button className="tooltip__btn tag">...</button>
+                  <div className="tooltip__panel">
+                    Zeplin , Adobe XD, Adobe Photoshop, Adobe Illustrator
+                  </div>
                 </div>
               </div>
             </div>

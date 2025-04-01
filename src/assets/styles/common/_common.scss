@@ -128,6 +128,7 @@ html {
     background-color: $color_gray3;
     font-family: Consolas;
     color: $color_gray6;
+    border: 0;
   }
   .hash {
     margin: 0;
@@ -142,13 +143,28 @@ html {
 }
 
 .tooltip {
-  opacity: 0;
-  width: 22rem;
-  border: 1px solid $color_gray3;
-  background-color: $color_gray1;
-  color: #569cd6; //예외 컬러
-  font-size: 1.4rem;
-  font-family: Consolas;
-  padding: 0.6rem 1rem;
-  transition: all 0.4s ease-in-out;
+  position: relative;
+  &__btn {
+    cursor: pointer;
+    &:hover ~ .tooltip__panel {
+      opacity: 1;
+    }
+  }
+  &__panel {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: -0.6rem;
+    width: 22rem;
+    padding: 0.6rem 1rem;
+    margin-top: 0;
+    border: 1px solid $color_gray3;
+    background-color: $color_gray1;
+    color: #569cd6;
+    font-size: 1.4rem;
+    font-family: Consolas;
+    transform: translate(100%, 0);
+    transition: all 0.4s ease-in-out;
+  }
 }

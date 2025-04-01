@@ -33,8 +33,8 @@
       border-left: 1px solid $color_gray2;
       padding-left: 6rem;
       height: 100%;
+      gap: 1rem 3rem;
       &__item {
-        padding: 2rem;
         span:first-of-type,
         dt:first-of-type,
         dd:first-of-type {
@@ -43,7 +43,7 @@
         dl,
         .tagbox,
         &:first-of-type span:first-of-type {
-          margin-top: 1.2rem;
+          margin-top: 1.4rem;
         }
       }
       &__tit {
@@ -52,9 +52,11 @@
         color: $color_primary;
         &::before {
           content: "<";
+          margin-right: 0.2rem;
         }
         &::after {
           content: ">";
+          margin-left: 0.2rem;
         }
         &::before,
         &::after {
@@ -67,7 +69,7 @@
       dt,
       dd {
         color: $color_gray6;
-        margin-top: 0.8rem;
+        margin-top: 1rem;
       }
       span {
         display: block;
@@ -88,16 +90,6 @@
         vertical-align: top;
         line-height: 150%;
         word-break: keep-all;
-      }
-
-      // tag
-      .tagbox {
-        .tag:last-of-type {
-          cursor: pointer;
-        }
-        .tag:last-of-type:hover ~ .tooltip {
-          opacity: 1;
-        }
       }
     }
   }
