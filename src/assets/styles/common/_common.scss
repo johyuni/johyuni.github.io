@@ -154,8 +154,8 @@ html {
     opacity: 0;
     position: absolute;
     z-index: 10;
-    top: 0;
-    right: -0.6rem;
+    bottom: -5.6rem;
+    right: 50%;
     width: 22rem;
     padding: 0.6rem 1rem;
     margin-top: 0;
@@ -164,7 +164,7 @@ html {
     color: #569cd6;
     font-size: 1.4rem;
     font-family: Consolas;
-    transform: translate(100%, 0);
+    transform: translate(50%, 0);
     transition: all 0.4s ease-in-out;
   }
 }
