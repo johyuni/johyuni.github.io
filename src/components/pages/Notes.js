@@ -76,9 +76,8 @@ function Notes() {
             target="blank"
             className="txt__link"
           >
-            더보기 버튼
+            더보기
           </a>
-          {/* 아래쪽 화살표로 대체할것  */}
         </div>
       </div>
     </section>

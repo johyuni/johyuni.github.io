@@ -45,9 +45,11 @@
     &__btn {
       display: none;
       flex-shrink: 0;
-      width: 4.4rem;
-      height: 4.4rem;
-      background-color: $color_primary;
+      width: 3.2rem;
+      height: 3.2rem;
+      background: url("../../images/ico/ico-menu-wh.png") no-repeat center
+        center;
+      background-size: 3.2rem;
       border: 0;
       cursor: pointer;
     }
@@ -70,6 +72,11 @@
     transform: translateX(0);
     &.show {
       transform: translateX(-100%);
+    }
+    .gnb__btn {
+      background: url("../../images/ico/ico-close-bk.png") no-repeat center
+        center;
+      background-size: 3.2rem;
     }
     &__header {
       display: flex;

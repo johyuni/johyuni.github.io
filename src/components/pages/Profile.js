@@ -12,7 +12,7 @@ function Profile() {
               <br />
               꾸준히 성장하는 조현희입니다.
               <a href="/" target="blank" className="txt__link">
-                소개 더보기
+                더보기
               </a>
             </strong>
             <p className="txt__body3">

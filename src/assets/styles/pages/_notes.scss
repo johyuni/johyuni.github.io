@@ -52,7 +52,10 @@
           flex-shrink: 0;
           width: 1.6rem;
           height: 1.6rem;
-          background-color: $color_primary;
+          background: url("../../images/ico/ico-arrow-rg.png") no-repeat center
+            center;
+          background-size: 1.6rem;
+          opacity: 0.2;
         }
       }
     }
@@ -78,6 +81,18 @@
       &__link {
         text-align: center;
         color: $color_gray4;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 1.6rem;
+          height: 1.6rem;
+          padding-left: 0.4rem;
+          background: url("../../images/ico/ico-arrow-dw.png") no-repeat center
+            center;
+          background-size: 1.6rem;
+          vertical-align: middle;
+          opacity: 0.5;
+        }
         &:hover {
           color: $color_gray3;
         }
