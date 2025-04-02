@@ -143,7 +143,6 @@ html {
 }
 
 .tooltip {
-  position: relative;
   &__btn {
     cursor: pointer;
     &:hover ~ .tooltip__panel {
@@ -155,7 +154,7 @@ html {
     position: absolute;
     z-index: 10;
     bottom: -5.6rem;
-    right: 50%;
+    left: 0;
     width: 22rem;
     padding: 0.6rem 1rem;
     margin-top: 0;
@@ -164,7 +163,7 @@ html {
     color: #569cd6;
     font-size: 1.4rem;
     font-family: Consolas;
-    transform: translate(50%, 0);
+    transform: translate(0, 0);
     transition: all 0.4s ease-in-out;
   }
 }

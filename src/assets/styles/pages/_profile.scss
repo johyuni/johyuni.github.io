@@ -10,7 +10,7 @@
       flex-direction: column;
       flex-shrink: 0;
       gap: 2rem;
-      width: 37rem;
+      width: 40rem;
       height: 100%;
       &__link {
         margin-top: 2rem;
@@ -33,7 +33,7 @@
       border-left: 1px solid $color_gray2;
       padding-left: 6rem;
       height: 100%;
-      gap: 1.4rem 3rem;
+      gap: 2rem 6rem;
       &__item {
         span:first-of-type,
         dt:first-of-type,
@@ -44,6 +44,13 @@
         .tagbox,
         &:first-of-type span:first-of-type {
           margin-top: 1.4rem;
+        }
+        .tagbox {
+          position: relative;
+          max-width: 30rem;
+        }
+        &:last-of-type {
+          grid-column: span 2;
         }
       }
       &__tit {
@@ -85,8 +92,8 @@
       dd {
         font-size: 1.3rem;
         display: inline-block;
-        width: calc(100% - 16.8rem);
-        padding-left: 0.8rem;
+        width: calc(100% - 17rem);
+        padding-left: 1rem;
         vertical-align: top;
         line-height: 150%;
         word-break: keep-all;
@@ -97,22 +104,27 @@
   // media::tablet
   @media screen and (max-width: 1400px) {
     .main__content {
-      gap: 0 2rem;
+      gap: 0 4rem;
       align-items: flex-start;
       .txt {
         width: 30rem;
       }
       .grid {
         padding-left: 4rem;
-        gap: 1rem 4rem;
+        gap: 2rem 4rem;
         &__item {
           padding: 0;
-        }
-        dt {
-          width: 9rem;
-        }
-        dd {
-          width: calc(100% - 9.8rem);
+          &:nth-of-type(3) {
+            dt {
+              width: 4rem;
+            }
+            dd {
+              width: calc(100% - 5rem);
+            }
+          }
+          dd br {
+            display: none;
+          }
         }
       }
     }
@@ -150,9 +162,6 @@
         dd {
           width: calc(100% - 16.8rem);
           text-align: right;
-          br {
-            display: none;
-          }
         }
       }
     }
