@@ -67,6 +67,11 @@ function Profile() {
                 <span className="tag">JavaScript</span>
                 <span className="tag">React</span>
                 <span className="tag">Figma</span>
+
+                <span className="tag mo-view">Zeplin</span>
+                <span className="tag mo-view"> Adobe XD</span>
+                <span className="tag mo-view"> Adobe Photoshop</span>
+                <span className="tag mo-view">Adobe Illustrator</span>
                 <div className="tooltip">
                   <button className="tooltip__btn tag">...</button>
                   <div className="tooltip__panel">

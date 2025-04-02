@@ -62,17 +62,7 @@ html {
   @media screen and (max-width: 1024px) {
     section:not(.main__visual) {
       height: 100%;
-      padding: 8rem 0;
-    }
-  }
-
-  // media::mobile
-  @media screen and (max-width: 768px) {
-    section:not(.main__visual) {
-      padding: 6rem 0;
-    }
-    .inner {
-      padding: 0 2rem;
+      padding: 15rem 0;
     }
     .txt {
       &__tit {
@@ -84,6 +74,16 @@ html {
       &__body2 {
         @include txt_body3; // 고침
       }
+    }
+  }
+
+  // media::mobile
+  @media screen and (max-width: 768px) {
+    section:not(.main__visual) {
+      padding: 6rem 0;
+    }
+    .inner {
+      padding: 0 2rem;
     }
   }
 }

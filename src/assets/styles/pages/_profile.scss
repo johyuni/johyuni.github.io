@@ -48,6 +48,9 @@
         .tagbox {
           position: relative;
           max-width: 30rem;
+          .mo-view {
+            display: none;
+          }
         }
         &:last-of-type {
           grid-column: span 2;
@@ -114,16 +117,22 @@
         gap: 2rem 4rem;
         &__item {
           padding: 0;
-          &:nth-of-type(3) {
-            dt {
-              width: 4rem;
-            }
-            dd {
-              width: calc(100% - 5rem);
-            }
+          dt {
+            width: 7rem;
+          }
+          dd {
+            width: calc(100% - 8rem);
           }
           dd br {
             display: none;
+          }
+          &:last-of-type {
+            dt {
+              width: 16rem;
+            }
+            dd {
+              width: calc(100% - 17rem);
+            }
           }
         }
       }
@@ -144,7 +153,7 @@
         border-bottom: 1px solid $color_gray2;
         padding-bottom: 6rem;
         &__header {
-          width: 23rem;
+          width: 24rem;
           flex-shrink: 0;
         }
         &__body3 {
@@ -155,13 +164,23 @@
         border-left: 0;
         padding-left: 0;
         gap: 4rem;
-        grid-template-columns: 1fr; // 2단으로 바꾸는것 고민
-        dt {
-          width: 16rem;
+        grid-template-columns: 1fr;
+        &__item:last-of-type {
+          grid-column: auto;
         }
-        dd {
-          width: calc(100% - 16.8rem);
-          text-align: right;
+        &__item {
+          .tagbox {
+            max-width: 100%;
+            .mo-view {
+              display: block;
+            }
+            .tooltip {
+              display: none;
+            }
+          }
+          dd {
+            text-align: right;
+          }
         }
       }
     }
