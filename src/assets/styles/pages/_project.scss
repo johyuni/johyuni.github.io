@@ -99,6 +99,19 @@
       }
       .swiper {
         width: 100%;
+        .txt {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 48rem;
+          height: 100%;
+          &__box {
+            bottom: 0;
+          }
+        }
+      }
+      .main__project .main__content .swiper .swiper-slide {
+        align-content: space-between;
       }
     }
 
@@ -108,6 +121,12 @@
       .swiper .swiper-slide {
         flex-direction: column;
         gap: 3rem;
+        .txt {
+          height: 8rem;
+          background-color: $color_black;
+          width: 100%;
+          align-items: flex-start;
+        }
       }
       .swiper .swiper-pagination {
         display: block;
@@ -125,10 +144,6 @@
       .imgbox {
         width: 100%;
         height: 40rem;
-      }
-      .txt {
-        height: 8rem;
-        background-color: $color_black;
       }
       .txt .txt__box {
         display: none;

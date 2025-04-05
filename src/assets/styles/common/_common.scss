@@ -32,8 +32,8 @@ html {
 .main {
   background-color: $color_black;
   section:not(.main__connect) {
-    height: calc(100vh - 22rem);
-    padding: 11rem 0;
+    height: calc(100vh - 24rem);
+    padding: 12rem 0;
   }
   .inner {
     position: relative;
@@ -63,7 +63,7 @@ html {
   @media screen and (max-width: 1024px) {
     section:not(.main__visual) {
       height: 100%;
-      padding: 15rem 0;
+      padding: 8rem 0;
     }
     .txt {
       &__tit {
