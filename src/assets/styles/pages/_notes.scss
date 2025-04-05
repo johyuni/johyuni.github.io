@@ -12,12 +12,10 @@
 
   // content
   .main__content {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .box {
-      margin-top: 3rem;
-    }
     .inputbox {
       .input {
         display: block;
@@ -35,7 +33,7 @@
     }
 
     .tagbox {
-      margin-top: 1.2rem;
+      margin-top: 1rem;
     }
 
     .list {
@@ -114,13 +112,13 @@
   @media screen and (max-width: 768px) {
     .main__content {
       .list {
-        height: 28rem;
+        height: 33.6rem;
       }
       .txt {
         position: relative;
-        padding: 2rem 1.6rem;
+        padding: 1.6rem;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.2rem 1rem;
         &__body1 {
           width: calc(100% - 3rem);
         }
