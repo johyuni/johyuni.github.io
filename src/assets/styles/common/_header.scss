@@ -1,4 +1,9 @@
 .header {
+  .inner {
+    max-width: 140rem;
+    height: 100%;
+    margin: 0 auto;
+  }
   .gnb {
     @include flex;
     gap: 0 4rem;

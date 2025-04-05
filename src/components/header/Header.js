@@ -29,70 +29,77 @@ function Header() {
   return (
     <header className="header">
       {/* gnb*/}
-      <div className="gnb">
-        <a href="/" role="button" aria-label="상위로 이동">
-          <h1 className="gnb__logo">
-            <span className="blind">Portfolio</span>
-          </h1>
-        </a>
-
-        {/* nav */}
-        {/* Link태그여야 하지만 앵커포인트 설정을 위해 a태그로 작업 */}
-        <nav className="gnb__nav">
-          {["profile", "project", "notes", "core", "connect"].map((item) => (
-            <a key={item} href={`#${item}`} className="link" aria-label={item}>
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </a>
-          ))}
-        </nav>
-
-        <button
-          type="button"
-          aria-label="메뉴 열기"
-          className="gnb__btn"
-          onClick={toggleMenu}
-        ></button>
-      </div>
-
-      {/* gnb--mobile*/}
-      <div className={`gnb gnb--full ${isMenuOpen ? "show" : ""}`}>
-        <div className="gnb--full__header">
+      <div className="inner">
+        <div className="gnb">
           <a href="/" role="button" aria-label="상위로 이동">
             <h1 className="gnb__logo">
               <span className="blind">Portfolio</span>
             </h1>
           </a>
+
+          {/* nav */}
+          {/* Link태그여야 하지만 앵커포인트 설정을 위해 a태그로 작업 */}
+          <nav className="gnb__nav">
+            {["profile", "project", "notes", "core", "connect"].map((item) => (
+              <a
+                key={item}
+                href={`#${item}`}
+                className="link"
+                aria-label={item}
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </a>
+            ))}
+          </nav>
+
           <button
             type="button"
-            aria-label="메뉴 닫기"
+            aria-label="메뉴 열기"
             className="gnb__btn"
-            onClick={closeMenu}
+            onClick={toggleMenu}
           ></button>
         </div>
 
-        <ul className="gnb--full__menu">
-          {menu.map((item) => (
-            <li key={item.id} className="gnb--full__depth">
-              <a href={`#${item.id}`} className="link" onClick={closeMenu}>
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {/* gnb--mobile*/}
+        <div className={`gnb gnb--full ${isMenuOpen ? "show" : ""}`}>
+          <div className="gnb--full__header">
+            <a href="/" role="button" aria-label="상위로 이동">
+              <h1 className="gnb__logo">
+                <span className="blind">Portfolio</span>
+              </h1>
+            </a>
+            <button
+              type="button"
+              aria-label="메뉴 닫기"
+              className="gnb__btn"
+              onClick={closeMenu}
+            ></button>
+          </div>
 
-        <div className="gnb--full__footer">
-          <ul className="gnb--full__list">
-            {menuFooter.map((item) => (
-              <li key={item.id} className="gnb--full__item">
-                <a href={item.link} target="blank" className="link">
+          <ul className="gnb--full__menu">
+            {menu.map((item) => (
+              <li key={item.id} className="gnb--full__depth">
+                <a href={`#${item.id}`} className="link" onClick={closeMenu}>
                   {item.name}
                 </a>
               </li>
             ))}
           </ul>
-          <span className="gnb--full__copy">
-            &copy;hyyyuni. All rights reserved.
-          </span>
+
+          <div className="gnb--full__footer">
+            <ul className="gnb--full__list">
+              {menuFooter.map((item) => (
+                <li key={item.id} className="gnb--full__item">
+                  <a href={item.link} target="blank" className="link">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <span className="gnb--full__copy">
+              &copy;hyyyuni. All rights reserved.
+            </span>
+          </div>
         </div>
       </div>
     </header>
