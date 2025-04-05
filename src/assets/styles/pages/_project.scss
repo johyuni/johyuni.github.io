@@ -104,7 +104,7 @@
 
     // media::tablet
     @media screen and (max-width: 1024px) {
-      margin-top: 4rem;
+      margin-top: 5rem;
       .swiper .swiper-slide {
         flex-direction: column;
         gap: 3rem;
@@ -138,10 +138,10 @@
     // media::mobile
     @media screen and (max-width: 768px) {
       .txt {
-        height: 14rem;
+        height: 10rem;
       }
       .swiper .swiper-pagination {
-        margin-top: 3rem;
+        margin-top: 4rem;
       }
     }
   }
