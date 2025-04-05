@@ -15,7 +15,8 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: auto;
+    gap: 4rem;
     .inputbox {
       .input {
         display: block;
