@@ -17,12 +17,13 @@
         color: $color_gray6;
       }
       &__body2 {
-        padding-top: 2rem;
+        padding-top: 1.6rem;
         color: $color_gray5;
+        font-weight: 400;
       }
       &__body3 {
         display: block;
-        padding-top: 1.8rem;
+        padding-top: 1rem;
         color: $color_primary;
       }
     }
@@ -40,17 +41,10 @@
         flex-direction: column;
         gap: 4rem;
       }
-      .txt__body3 {
-        padding-top: 1rem;
-      }
     }
   }
 
   // media::mobile
   @media screen and (max-width: 768px) {
-    .main__content .txt__body2 {
-      padding-top: 1.6rem;
-      font-weight: 400;
-    }
   }
 }
