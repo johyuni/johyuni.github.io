@@ -5,7 +5,7 @@ function Visual() {
     <section className="main__visual">
       <h2 className="text">
         <p className="text__tit">Portfolio</p>
-        <span className="text__dsc">조현희의 포트폴리오입니다.</span>
+        <span className="text__dsc"></span>
       </h2>
     </section>
   );
