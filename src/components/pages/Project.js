@@ -26,7 +26,7 @@ function Project() {
     {
       title: "COSMO 보증금 처리지원금 지급관리시스템 고도화 유지보수",
       name: "COSMO 보증금 처리지원금 지급관리시스템 고도화 유지보수",
-      dsc: "웹스퀘어 기반 개발 환경에서 유지보수 및 기기테스트를 진행했습니다. ",
+      dsc: "WebSquare 기반 개발 환경에서 유지보수 및 기기테스트를 진행했습니다. ",
       link: "https://www.cosmo.or.kr/kor",
     },
     {

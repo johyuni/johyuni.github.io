@@ -152,8 +152,9 @@
 
     // media::mobile
     @media screen and (max-width: 768px) {
-      .txt {
-        height: 10rem;
+      .txt__body2 {
+        min-height: 8rem;
+        background-color: $color_black;
       }
       .swiper .swiper-pagination {
         margin-top: 4rem;

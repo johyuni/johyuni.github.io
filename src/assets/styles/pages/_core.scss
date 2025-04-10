@@ -17,13 +17,13 @@
         color: $color_gray6;
       }
       &__body2 {
-        padding-top: 1.6rem;
+        margin-top: 0.6rem;
         color: $color_gray5;
-        font-weight: 400;
+        font-weight: 300;
       }
       &__body3 {
         display: block;
-        padding-top: 1rem;
+        margin-top: auto;
         color: $color_primary;
       }
     }
@@ -32,6 +32,9 @@
       gap: 0 4rem;
       &__item {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
       }
     }
   }
