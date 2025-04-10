@@ -61,7 +61,6 @@
       flex-shrink: 0;
       width: 44rem;
       height: 100%;
-      background-color: #4d49fc;
     }
     .img {
       display: block;
@@ -153,7 +152,7 @@
     // media::mobile
     @media screen and (max-width: 768px) {
       .txt__body2 {
-        min-height: 8rem;
+        min-height: 6rem;
         background-color: $color_black;
       }
       .swiper .swiper-pagination {
