@@ -4,8 +4,7 @@ function Visual() {
   return (
     <section className="main__visual">
       <h2 className="text">
-        <p className="text__tit">Portfolio</p>
-        <span className="text__dsc"></span>
+        <p className="text__tit"></p>
       </h2>
     </section>
   );

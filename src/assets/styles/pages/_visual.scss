@@ -1,5 +1,5 @@
 .main__visual {
-  background-color: $color_black; // 임시
+  background: url("../../images/img/img-visual.png") no-repeat center / cover;
 
   .text {
     @include center;
