@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2de09770.css",
-    "main.js": "/static/js/main.bb85543d.js",
-    "static/media/img-project-5.png": "/static/media/img-project-5.f3c3a9db518ae4b2c58a.png",
-    "static/media/img-visual.png": "/static/media/img-visual.82c81258b68dbcb4b774.png",
+    "main.css": "/static/css/main.7da06fe4.css",
+    "main.js": "/static/js/main.aa45606b.js",
+    "static/media/img-project-5.png": "/static/media/img-project-5.89c56bdadfb497d1061a.png",
     "static/media/img-project-1.png": "/static/media/img-project-1.73e8af3a250ca4a3b3a4.png",
     "static/media/Pretendard-Black.woff": "/static/media/Pretendard-Black.8bad248bdb96c3377cbc.woff",
     "static/media/Pretendard-ExtraBold.woff": "/static/media/Pretendard-ExtraBold.88651b953c5d967d1db9.woff",
@@ -24,14 +23,15 @@
     "static/media/Pretendard-ExtraLight.woff2": "/static/media/Pretendard-ExtraLight.78e886701aa794247c35.woff2",
     "static/media/Pretendard-Thin.woff2": "/static/media/Pretendard-Thin.450b58933971c5b135f4.woff2",
     "static/media/img-project-3.png": "/static/media/img-project-3.1ef3769784286c4b70fb.png",
+    "static/media/img-visual.jpg": "/static/media/img-visual.4cfcef1fcacf2217ed6e.jpg",
     "static/media/img-project-2.png": "/static/media/img-project-2.e47d6e9b12264117c8e1.png",
     "static/media/img-project-4.png": "/static/media/img-project-4.8a34ea563796bc00542d.png",
     "index.html": "/index.html",
-    "main.2de09770.css.map": "/static/css/main.2de09770.css.map",
-    "main.bb85543d.js.map": "/static/js/main.bb85543d.js.map"
+    "main.7da06fe4.css.map": "/static/css/main.7da06fe4.css.map",
+    "main.aa45606b.js.map": "/static/js/main.aa45606b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2de09770.css",
-    "static/js/main.bb85543d.js"
+    "static/css/main.7da06fe4.css",
+    "static/js/main.aa45606b.js"
   ]
 }
