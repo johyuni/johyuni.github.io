@@ -12,7 +12,7 @@ function Profile() {
               <br />
               꾸준히 성장하는 조현희입니다.
               <a
-                href="https://drive.google.com/file/d/1ysPSuod9KKQ70llAn3_6sdJdciAIcRjx/view?usp=drive_link"
+                href="https://m.site.naver.com/1G2Up"
                 target="blank"
                 className="txt__link"
               >
