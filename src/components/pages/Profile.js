@@ -8,10 +8,14 @@ function Profile() {
           {/* left */}
           <div className="txt">
             <strong className="txt__header">
-              하나보다 더 잘하는
+              밝은 에너지와 경청하는 자세로
               <br />
-              다재다능한 조현희입니다.
-              <a href="/" target="blank" className="txt__link">
+              꾸준히 성장하는 조현희입니다.
+              <a
+                href="https://drive.google.com/file/d/1ysPSuod9KKQ70llAn3_6sdJdciAIcRjx/view?usp=drive_link"
+                target="blank"
+                className="txt__link"
+              >
                 더보기
               </a>
             </strong>

@@ -1,9 +1,5 @@
 .main__notes {
   background-color: $color_white;
-  .inner {
-    flex-direction: column;
-    justify-content: space-between;
-  }
 
   // tit
   .main__tit {
@@ -15,7 +11,7 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: calc(100% - 80px);
     gap: 4rem;
     .inputbox {
       .input {
