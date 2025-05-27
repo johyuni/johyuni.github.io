@@ -42,7 +42,9 @@
   @media screen and (max-width: 768px) {
     .main__content {
       flex-direction: column;
+      align-items: flex-start;
       .imgbox {
+        margin: 0 auto;
         width: 16rem;
         height: 16rem;
       }

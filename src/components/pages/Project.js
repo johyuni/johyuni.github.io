@@ -63,7 +63,7 @@ function Project() {
             effect={"fade"}
             centeredSlides={true}
             autoplay={{
-              delay: 5000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             loop={true}

@@ -19,6 +19,7 @@
       height: 5rem;
       background: url("../../images/img/img-logo.png") no-repeat center;
       background-size: 5rem;
+      animation: spin 3s ease-in-out infinite;
     }
     &__nav {
       @include flex;
@@ -52,7 +53,7 @@
       flex-shrink: 0;
       width: 3.2rem;
       height: 3.2rem;
-      background: url("../../images/ico/ico-menu-wh.png") no-repeat center
+      background: url("../../images/ico/ico-menu-wh.svg") no-repeat center
         center;
       background-size: 3.2rem;
       border: 0;
@@ -79,7 +80,7 @@
       transform: translateX(-100%);
     }
     .gnb__btn {
-      background: url("../../images/ico/ico-close-bk.png") no-repeat center
+      background: url("../../images/ico/ico-close-bk.svg") no-repeat center
         center;
       background-size: 3.2rem;
     }
@@ -93,7 +94,8 @@
       border-bottom: 1px solid $color_gray6;
       box-sizing: border-box;
       .gnb__logo {
-        background-color: $color_black;
+        background: url("../../images/img/img-logo-bk.png") no-repeat center;
+        background-size: 5rem;
       }
     }
 
@@ -168,5 +170,12 @@
         display: block;
       }
     }
+  }
+}
+
+// ani
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
