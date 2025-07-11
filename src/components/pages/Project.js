@@ -67,11 +67,11 @@ function Project() {
           <Swiper
             effect={"fade"}
             centeredSlides={true}
+            loop={true}
             autoplay={{
-              delay: 4000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
-            loop={true}
             modules={[Autoplay, EffectFade, Pagination]}
             className="mySwiper"
             pagination={{

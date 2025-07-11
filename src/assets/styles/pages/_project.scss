@@ -121,10 +121,10 @@
         flex-direction: column;
         gap: 3rem;
         .txt {
-          height: 8rem;
           background-color: $color_black;
           width: 100%;
           align-items: flex-start;
+          min-height: 16rem;
         }
       }
       .swiper .swiper-pagination {
@@ -151,12 +151,12 @@
 
     // media::mobile
     @media screen and (max-width: 768px) {
-      .txt__body2 {
-        min-height: 6rem;
-        background-color: $color_black;
-      }
+      // .txt__body2:not(:last-of-type) {
+      //   min-height: 6rem;
+      //   background-color: $color_black;
+      // }
       .swiper .swiper-pagination {
-        margin-top: 4rem;
+        margin-top: 1rem;
       }
     }
   }
