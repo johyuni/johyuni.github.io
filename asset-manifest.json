@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c66ed81f.css",
-    "main.js": "/static/js/main.bc9ee0e8.js",
+    "main.css": "/static/css/main.73e6c1c1.css",
+    "main.js": "/static/js/main.ad616a86.js",
     "static/media/img-project-5.png": "/static/media/img-project-5.89c56bdadfb497d1061a.png",
     "static/media/img-project-1.png": "/static/media/img-project-1.73e8af3a250ca4a3b3a4.png",
     "static/media/Pretendard-Black.woff": "/static/media/Pretendard-Black.8bad248bdb96c3377cbc.woff",
@@ -33,11 +33,11 @@
     "static/media/ico-menu-wh.svg": "/static/media/ico-menu-wh.8de68e24a2dd25d30c29.svg",
     "static/media/ico-close-bk.svg": "/static/media/ico-close-bk.77e9209f1467afbc6105.svg",
     "static/media/ico-arrow-rg.svg": "/static/media/ico-arrow-rg.f80ba1b8930f11981413.svg",
-    "main.c66ed81f.css.map": "/static/css/main.c66ed81f.css.map",
-    "main.bc9ee0e8.js.map": "/static/js/main.bc9ee0e8.js.map"
+    "main.73e6c1c1.css.map": "/static/css/main.73e6c1c1.css.map",
+    "main.ad616a86.js.map": "/static/js/main.ad616a86.js.map"
   },
   "entrypoints": [
-    "static/css/main.c66ed81f.css",
-    "static/js/main.bc9ee0e8.js"
+    "static/css/main.73e6c1c1.css",
+    "static/js/main.ad616a86.js"
   ]
 }
